@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" href="assets/mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Almarai:wght@400;700;800&family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 /* ================= tokens ================= */
 :root{
@@ -40,14 +40,14 @@
   --f-disp:'DM Serif Display',Georgia,serif;
   --f-body:'Inter',system-ui,sans-serif;
   --f-mono:'JetBrains Mono',ui-monospace,monospace;
-  --f-ar:'Almarai',system-ui,sans-serif;
+  --f-ar:'Noto Naskh Arabic',system-ui,serif;
   --wrap:1180px;
   --r:14px;
   --sh:0 10px 30px rgba(13,27,42,.08);
 }
 html[lang=ar]{
-  --f-disp:'El Messiri','Almarai',sans-serif;
-  --f-body:'Almarai',sans-serif;
+  --f-disp:'Amiri','Noto Naskh Arabic',serif;
+  --f-body:'Noto Naskh Arabic',serif;
 }
 /* ================= base ================= */
 *{margin:0;padding:0;box-sizing:border-box}
@@ -69,7 +69,8 @@ section{scroll-margin-top:102px}
 .dark h2,.dark h3,.dark2 h2,.dark2 h3{color:var(--mist)}
 .light h2,.light h3{color:var(--n-text)}
 h1,h2,h3{font-family:var(--f-disp);font-weight:400;line-height:1.15;letter-spacing:.1px}
-html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{font-weight:700;line-height:1.35}
+html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{font-weight:700;line-height:1.55}
+html[lang=ar] body{line-height:2}
 h2{font-size:clamp(1.9rem,3.4vw,2.75rem);margin-bottom:14px}
 .lead{font-size:clamp(1.02rem,1.4vw,1.2rem);max-width:760px}
 .dark .lead,.dark2 .lead{color:var(--fog)}
@@ -102,6 +103,8 @@ html[lang=ar] .eb{letter-spacing:.12em}
 .btn-g{background:var(--gold);color:var(--navy)}
 .btn-g:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,168,76,.35)}
 .nav .cta{white-space:nowrap}
+.loginlnk{font-size:14px;font-weight:600;color:var(--fog);transition:color .25s}
+.loginlnk:hover{color:#fff}
 .burger{display:none;flex-direction:column;gap:5px;padding:8px;margin-inline-start:4px}
 .burger span{display:block;width:22px;height:2px;background:var(--mist);border-radius:2px;transition:.3s}
 .mmenu{position:fixed;inset:0;z-index:55;background:rgba(10,21,34,.98);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;opacity:0;pointer-events:none;transition:opacity .3s}
@@ -357,12 +360,9 @@ footer .soc{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate}
 h1 .gtx,h2 .gtx{font-style:italic}
 html[lang=ar] .gtx{font-style:normal}
 /* ---- hero scale tiles ---- */
-.scale{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);border-radius:var(--r);overflow:hidden}
-.scale .sc{background:rgba(13,27,42,.72);padding:16px 16px 15px;display:flex;gap:12px;align-items:flex-start;backdrop-filter:blur(6px)}
-.scale .ic{width:34px;height:34px;border-radius:9px;background:rgba(0,198,167,.14);color:var(--teal);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
-.scale .ic svg{width:17px;height:17px}
-.scale b{display:block;font-size:13.5px;color:var(--mist);line-height:1.35}
-.scale span{display:block;font-size:11px;color:var(--sl);margin-top:3px}
+.scale{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;border-block:1px solid var(--line-d);padding:13px 2px}
+.scale .sc{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--fog);white-space:nowrap}
+.scale .sc svg{width:15px;height:15px;color:var(--teal);flex:0 0 auto}
 /* ---- translation gap panel ---- */
 .probwrap{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
 .gap{background:var(--surf);border:1px solid var(--line-d);border-radius:18px;padding:24px;display:grid;gap:12px}
@@ -578,7 +578,6 @@ footer .legalinks button:hover{color:#fff}
 /* ================= responsive ================= */
 @media(max-width:1024px){
   .probwrap,.anat,.crwrap,.mi2,.exwrap,.rfwrap,.cwrap{grid-template-columns:1fr;gap:40px}
-  .scale{grid-template-columns:repeat(2,1fr)}
   .tled{columns:1}
   .hero .in{grid-template-columns:1fr;gap:44px;padding-top:140px}
   .mkt,.dial,.menuwrap{grid-template-columns:1fr;gap:44px}
@@ -590,6 +589,7 @@ footer .legalinks button:hover{color:#fff}
 }
 @media(max-width:900px){
   .nav nav{display:none}
+  .loginlnk{display:none}
   .burger{display:flex}
   .nav .cta{display:none}
 }
@@ -598,7 +598,6 @@ footer .legalinks button:hover{color:#fff}
   .gaprow{grid-template-columns:1fr;gap:8px}
   .gap .who{display:none}
   .gap .res{justify-content:flex-start}
-  .scale{grid-template-columns:1fr}
   .covers{height:300px;transform:scale(.82);transform-origin:top center}
   .read{grid-template-columns:34px 1fr;grid-auto-rows:auto}
   .read .val{grid-column:2;justify-self:start}
@@ -681,7 +680,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
 <!-- ============ nav ============ -->
 <header class="nav" id="nav">
   <div class="in">
-    <a class="logo" href="#top" aria-label="Ripple Intelligence"><img src="assets/logo-white.png?v=3" alt="Ripple Intelligence"></a>
+    <a class="logo" href="#top" aria-label="Ripple Intelligence"><img src="assets/logo-white.png?v=4" alt="Ripple Intelligence"></a>
     <nav aria-label="Primary">
       <a href="#platform" data-i="nav_platform">Platform</a>
       <a href="#dialect" data-i="nav_dialect">Dialect Engine</a>
@@ -694,6 +693,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
       <button id="lang-en" class="on" onclick="setLang('en')">EN</button>
       <button id="lang-ar" onclick="setLang('ar')" style="font-family:var(--f-ar)">ع</button>
     </div>
+    <a href="#" class="loginlnk" data-i="nav_login">Login</a>
     <a href="#contact" class="btn btn-t cta" data-i="nav_cta">Book a demo</a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -705,6 +705,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
   <a href="#reports" data-i="nav_reports">Reports</a>
   <a href="#why" data-i="nav_why">Why Ripple</a>
   <a href="#faq" data-i="nav_faq">FAQ</a>
+  <a href="#" data-i="nav_login">Login</a>
   <a href="#contact" class="btn btn-t" data-i="nav_cta">Book a demo</a>
 </div>
 
@@ -718,13 +719,12 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
       <p class="sub hl" data-i="hero_sub">Ripple reads everything the market says about food — in Kuwaiti Arabic and English — and turns it into decisions: what happened, what matters, and what to do about it.</p>
       <div class="ctas hl">
         <a href="#contact" class="btn btn-t" data-i="hero_cta1">Book a demo</a>
-        <a href="#platform" class="btn btn-o" data-i="hero_cta2">See the platform</a>
       </div>
       <div class="scale hl">
-        <div class="sc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-type"/></svg></div><div><b data-i="sc1_b">A living Kuwaiti &amp; Khaleeji lexicon</b><span data-i="sc1_s">curated nightly, human-approved</span></div></div>
-        <div class="sc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-users"/></svg></div><div><b data-i="sc2_b">The food community’s leaders, tracked</b><span data-i="sc2_s">every mention matched and scored</span></div></div>
-        <div class="sc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-star"/></svg></div><div><b data-i="sc3_b">Reviews from across Kuwait, weekly</b><span data-i="sc3_s">attributed to the exact branch</span></div></div>
-        <div class="sc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-layers"/></svg></div><div><b data-i="sc4_b">Five pillars, an operator’s lens</b><span data-i="sc4_s">food · service · speed · ambience · value</span></div></div>
+        <span class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-type"/></svg><span data-i="sc1_b">Living Kuwaiti &amp; Khaleeji lexicon</span></span>
+        <span class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-users"/></svg><span data-i="sc2_b">Food-community leaders, tracked</span></span>
+        <span class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-star"/></svg><span data-i="sc3_b">Kuwait-wide reviews, weekly</span></span>
+        <span class="sc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-layers"/></svg><span data-i="sc4_b">Five operator pillars</span></span>
       </div>
     </div>
     <div class="hl">
@@ -1227,7 +1227,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
 
 <footer>
   <div class="wrap in">
-    <img src="assets/logo-white.png?v=3" alt="Ripple Intelligence">
+    <img src="assets/logo-white.png?v=4" alt="Ripple Intelligence">
     <span data-i="ft_tag">Listen Beyond Language. · Social intelligence for the Gulf</span>
     <div class="legalinks">
       <button type="button" onclick="openLegal('pp')" data-i="fl_p">Privacy Policy</button>
@@ -1252,15 +1252,15 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
 <script>
 /* ================= i18n ================= */
 const AR = {
-nav_platform:"المنصة", nav_dialect:"محرك اللهجات", nav_market:"ذكاء السوق", nav_reports:"التقارير", nav_why:"لماذا ريبل", nav_faq:"الأسئلة الشائعة", nav_cta:"احجز عرضاً",
+nav_platform:"المنصة", nav_dialect:"محرك اللهجات", nav_market:"ذكاء السوق", nav_reports:"التقارير", nav_why:"لماذا ريبل", nav_faq:"الأسئلة الشائعة", nav_login:"تسجيل الدخول", nav_cta:"احجز عرضاً",
 hero_eb:"ذكاء المطاعم بالذكاء الاصطناعي · الكويت والخليج",
 hero_h1:'اسمع ما <span class="tl">وراء اللغة.</span>',
 hero_sub:"ريبل يقرأ كل ما يقوله السوق عن الطعام — بالعربية الكويتية والإنجليزية — ويحوّله إلى قرارات: ماذا حدث، وما المهم، وما الذي يجب فعله.",
-hero_cta1:"احجز عرضاً", hero_cta2:"استكشف المنصة",
-sc1_b:"معجم كويتي وخليجي حيّ", sc1_s:"يُنسَّق كل ليلة، باعتماد بشري",
-sc2_b:"قادة مجتمع الطعام، تحت المتابعة", sc2_s:"كل ذكرٍ يُطابَق ويُقيَّم",
-sc3_b:"تقييمات من كل الكويت، أسبوعياً", sc3_s:"تُنسَب إلى الفرع بعينه",
-sc4_b:"خمسة محاور بعين المشغّل", sc4_s:"الأكل · الخدمة · السرعة · الأجواء · القيمة",
+hero_cta1:"احجز عرضاً",
+sc1_b:"معجم كويتي وخليجي حيّ",
+sc2_b:"قادة مجتمع الطعام، تحت المتابعة",
+sc3_b:"تقييمات من كل الكويت، أسبوعياً",
+sc4_b:"خمسة محاور بعين المشغّل",
 dec_title:"محرك اللهجات من ريبل · قراءة حيّة", dec_norm_l:"تُقرأ كعربية مكتوبة",
 dec_foot:"عبارات حقيقية تُقرأ كما يقرؤها ابن البلد — بسخريتها وعربيزيها وإيموجيها.",
 pr_eb:"المشكلة", pr_h:'الأدوات العالمية لم تُصنع <span class="gtx">لتسمع الخليج</span>',
