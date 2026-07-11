@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" href="assets/mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Almarai:wght@400;700;800&family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
 <style>
 /* ================= tokens ================= */
 :root{
@@ -40,14 +40,14 @@
   --f-disp:'DM Serif Display',Georgia,serif;
   --f-body:'Inter',system-ui,sans-serif;
   --f-mono:'JetBrains Mono',ui-monospace,monospace;
-  --f-ar:'IBM Plex Sans Arabic',system-ui,sans-serif;
+  --f-ar:'Almarai',system-ui,sans-serif;
   --wrap:1180px;
   --r:14px;
   --sh:0 10px 30px rgba(13,27,42,.08);
 }
 html[lang=ar]{
-  --f-disp:'IBM Plex Sans Arabic',sans-serif;
-  --f-body:'IBM Plex Sans Arabic',sans-serif;
+  --f-disp:'El Messiri','Almarai',sans-serif;
+  --f-body:'Almarai',sans-serif;
 }
 /* ================= base ================= */
 *{margin:0;padding:0;box-sizing:border-box}
@@ -60,7 +60,7 @@ button{font:inherit;cursor:pointer;background:none;border:none;color:inherit}
 .mono{font-family:var(--f-mono);unicode-bidi:plaintext}
 .num{font-family:var(--f-mono);font-weight:700;direction:ltr;unicode-bidi:isolate}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
-section{scroll-margin-top:94px}
+section{scroll-margin-top:102px}
 .sec{padding-block:96px}
 .sec.tight{padding-block:72px}
 .dark{background:var(--ink);color:var(--fog)}
@@ -83,8 +83,8 @@ html[lang=ar] .eb{letter-spacing:.12em}
 .shead{max-width:860px;margin-bottom:52px}
 /* ================= nav ================= */
 .nav{position:fixed;inset-inline:0;top:0;z-index:60;background:rgba(10,21,34,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-d);transition:background .3s}
-.nav .in{max-width:var(--wrap);margin-inline:auto;padding:0 24px;height:78px;display:flex;align-items:center;gap:28px}
-.nav .logo img{height:46px;width:auto}
+.nav .in{max-width:var(--wrap);margin-inline:auto;padding:0 24px;height:86px;display:flex;align-items:center;gap:28px}
+.nav .logo img{height:56px;width:auto}
 .nav nav{display:flex;gap:26px;margin-inline-start:auto}
 .nav nav a{font-size:13.5px;font-weight:500;color:var(--fog);letter-spacing:.02em;position:relative;padding-block:6px;transition:color .25s}
 .nav nav a::after{content:"";position:absolute;inset-inline-start:0;bottom:0;width:0;height:2px;background:var(--teal);border-radius:2px;transition:width .25s}
@@ -111,7 +111,7 @@ html[lang=ar] .mmenu a{font-weight:600}
 body.lock{overflow:hidden}
 /* ================= hero ================= */
 .hero{position:relative;overflow:hidden;background:radial-gradient(1200px 700px at 78% 12%,#12304a 0%,var(--ink) 55%)}
-.hero .in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:178px;padding-bottom:110px}
+.hero .in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:186px;padding-bottom:110px}
 .hero h1{font-size:clamp(2.7rem,5.6vw,4.5rem);color:#fff;margin:18px 0 22px}
 .hero h1 .tl{color:var(--teal)}
 .hero .sub{font-size:clamp(1.05rem,1.5vw,1.22rem);color:var(--fog);max-width:560px;margin-bottom:34px}
@@ -341,7 +341,7 @@ html[lang=ar] .cmp-note{font-weight:600}
 /* ================= footer ================= */
 footer{background:var(--navy);border-top:1px solid var(--line-d);padding-block:44px;color:var(--sl);font-size:13px}
 footer .in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-footer img{height:42px;width:auto}
+footer img{height:48px;width:auto}
 footer .soc{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate}
 /* ================= reveal ================= */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1)}
@@ -681,7 +681,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
 <!-- ============ nav ============ -->
 <header class="nav" id="nav">
   <div class="in">
-    <a class="logo" href="#top" aria-label="Ripple Intelligence"><img src="assets/logo-white.png" alt="Ripple Intelligence"></a>
+    <a class="logo" href="#top" aria-label="Ripple Intelligence"><img src="assets/logo-white.png?v=3" alt="Ripple Intelligence"></a>
     <nav aria-label="Primary">
       <a href="#platform" data-i="nav_platform">Platform</a>
       <a href="#dialect" data-i="nav_dialect">Dialect Engine</a>
@@ -1227,7 +1227,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
 
 <footer>
   <div class="wrap in">
-    <img src="assets/logo-white.png" alt="Ripple Intelligence">
+    <img src="assets/logo-white.png?v=3" alt="Ripple Intelligence">
     <span data-i="ft_tag">Listen Beyond Language. · Social intelligence for the Gulf</span>
     <div class="legalinks">
       <button type="button" onclick="openLegal('pp')" data-i="fl_p">Privacy Policy</button>
