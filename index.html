@@ -60,7 +60,7 @@ button{font:inherit;cursor:pointer;background:none;border:none;color:inherit}
 .mono{font-family:var(--f-mono);unicode-bidi:plaintext}
 .num{font-family:var(--f-mono);font-weight:700;direction:ltr;unicode-bidi:isolate}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
-section{scroll-margin-top:84px}
+section{scroll-margin-top:94px}
 .sec{padding-block:96px}
 .sec.tight{padding-block:72px}
 .dark{background:var(--ink);color:var(--fog)}
@@ -83,8 +83,8 @@ html[lang=ar] .eb{letter-spacing:.12em}
 .shead{max-width:860px;margin-bottom:52px}
 /* ================= nav ================= */
 .nav{position:fixed;inset-inline:0;top:0;z-index:60;background:rgba(10,21,34,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-d);transition:background .3s}
-.nav .in{max-width:var(--wrap);margin-inline:auto;padding:0 24px;height:68px;display:flex;align-items:center;gap:28px}
-.nav .logo img{height:34px;width:auto}
+.nav .in{max-width:var(--wrap);margin-inline:auto;padding:0 24px;height:78px;display:flex;align-items:center;gap:28px}
+.nav .logo img{height:46px;width:auto}
 .nav nav{display:flex;gap:26px;margin-inline-start:auto}
 .nav nav a{font-size:13.5px;font-weight:500;color:var(--fog);letter-spacing:.02em;position:relative;padding-block:6px;transition:color .25s}
 .nav nav a::after{content:"";position:absolute;inset-inline-start:0;bottom:0;width:0;height:2px;background:var(--teal);border-radius:2px;transition:width .25s}
@@ -111,7 +111,7 @@ html[lang=ar] .mmenu a{font-weight:600}
 body.lock{overflow:hidden}
 /* ================= hero ================= */
 .hero{position:relative;overflow:hidden;background:radial-gradient(1200px 700px at 78% 12%,#12304a 0%,var(--ink) 55%)}
-.hero .in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:168px;padding-bottom:110px}
+.hero .in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:178px;padding-bottom:110px}
 .hero h1{font-size:clamp(2.7rem,5.6vw,4.5rem);color:#fff;margin:18px 0 22px}
 .hero h1 .tl{color:var(--teal)}
 .hero .sub{font-size:clamp(1.05rem,1.5vw,1.22rem);color:var(--fog);max-width:560px;margin-bottom:34px}
@@ -124,11 +124,6 @@ body.lock{overflow:hidden}
 .rings i:nth-child(4){animation-delay:5.25s}
 @keyframes rip{0%{transform:translate(-50%,-50%) scale(.2);opacity:0}12%{opacity:.55}100%{transform:translate(-50%,-50%) scale(13);opacity:0}}
 /* hero stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);border-radius:var(--r);overflow:hidden}
-.stats .st{background:rgba(13,27,42,.72);padding:18px 18px 16px;backdrop-filter:blur(6px)}
-.stats .v{font-family:var(--f-mono);font-size:clamp(1.35rem,2.2vw,1.8rem);font-weight:700;color:var(--teal);direction:ltr;unicode-bidi:isolate}
-.stats .l{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--sl);margin-top:4px;font-weight:600}
-html[lang=ar] .stats .l{letter-spacing:0;font-size:12px}
 /* ================= decoder ================= */
 .decoder{position:relative;background:linear-gradient(160deg,var(--surf) 0%,var(--navy) 100%);border:1px solid var(--line-d);border-radius:18px;padding:26px 26px 22px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
 .decoder .bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
@@ -257,7 +252,6 @@ html[dir=rtl] .quad .axx{transform:translateX(50%)}
 .op p{font-size:13px;line-height:1.55}
 /* ================= dialect (dark) ================= */
 .dial{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:center;margin-bottom:64px}
-.dial .bignum{font-family:var(--f-mono);font-weight:700;font-size:clamp(4rem,8vw,6.4rem);color:var(--teal);line-height:1;direction:ltr;unicode-bidi:isolate}
 .dial .bl{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--sl);font-weight:600;margin-top:8px}
 html[lang=ar] .dial .bl{letter-spacing:0}
 .dial .flow{background:var(--surf);border:1px solid var(--line-d);border-radius:18px;padding:30px;box-shadow:0 24px 60px rgba(0,0,0,.4)}
@@ -271,7 +265,7 @@ html[dir=rtl] .frow .arr svg{transform:scaleX(-1)}
 .quoteband{margin-top:56px;background:var(--navy);border-radius:18px;padding:44px 48px;color:var(--fog);display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center}
 .quoteband .q{font-family:var(--f-disp);font-size:clamp(1.25rem,2.2vw,1.7rem);color:#fff;line-height:1.4}
 html[lang=ar] .quoteband .q{font-weight:600}
-.quoteband .mark{font-family:var(--f-disp);font-size:64px;color:var(--teal);line-height:.6}
+.quoteband .mark{font-family:var(--f-disp);font-size:64px;color:var(--gold);line-height:.6}
 .quoteband p{font-size:14px;margin-top:10px;max-width:720px}
 /* ================= market radar ================= */
 .mkt{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;margin-bottom:70px}
@@ -347,7 +341,7 @@ html[lang=ar] .cmp-note{font-weight:600}
 /* ================= footer ================= */
 footer{background:var(--navy);border-top:1px solid var(--line-d);padding-block:44px;color:var(--sl);font-size:13px}
 footer .in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-footer img{height:30px;width:auto}
+footer img{height:42px;width:auto}
 footer .soc{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate}
 /* ================= reveal ================= */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1)}
@@ -358,8 +352,234 @@ footer .soc{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate}
 .hload .hl{opacity:0;transform:translateY(24px);animation:up .9s cubic-bezier(.2,.7,.3,1) forwards}
 .hload .hl:nth-child(1){animation-delay:.1s}.hload .hl:nth-child(2){animation-delay:.22s}.hload .hl:nth-child(3){animation-delay:.34s}.hload .hl:nth-child(4){animation-delay:.46s}.hload .hl:nth-child(5){animation-delay:.58s}.hload .hl:nth-child(6){animation-delay:.7s}
 @keyframes up{to{opacity:1;transform:none}}
+/* ---- gold accent text ---- */
+.gtx{color:var(--gold)}
+h1 .gtx,h2 .gtx{font-style:italic}
+html[lang=ar] .gtx{font-style:normal}
+/* ---- hero scale tiles ---- */
+.scale{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);border-radius:var(--r);overflow:hidden}
+.scale .sc{background:rgba(13,27,42,.72);padding:16px 16px 15px;display:flex;gap:12px;align-items:flex-start;backdrop-filter:blur(6px)}
+.scale .ic{width:34px;height:34px;border-radius:9px;background:rgba(0,198,167,.14);color:var(--teal);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.scale .ic svg{width:17px;height:17px}
+.scale b{display:block;font-size:13.5px;color:var(--mist);line-height:1.35}
+.scale span{display:block;font-size:11px;color:var(--sl);margin-top:3px}
+/* ---- translation gap panel ---- */
+.probwrap{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.gap{background:var(--surf);border:1px solid var(--line-d);border-radius:18px;padding:24px;display:grid;gap:12px}
+.gap .cap{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--sl);font-family:var(--f-mono)}
+html[lang=ar] .gap .cap{letter-spacing:0;font-family:var(--f-ar);font-size:11.5px}
+.gaprow{display:grid;grid-template-columns:1fr 40px auto;gap:12px;align-items:center}
+.gap .msg{background:rgba(255,255,255,.04);border:1px solid var(--line-d);border-radius:12px;padding:11px 15px;font-size:14px;color:var(--mist);direction:ltr;unicode-bidi:plaintext;text-align:start}
+.gap .who{display:flex;justify-content:center}
+.gap .who .b{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700}
+.gap .who .glob{background:rgba(255,255,255,.06);color:var(--sl);border:1px solid var(--line-d)}
+.gap .who .rip{background:rgba(0,198,167,.15);color:var(--teal);border:1px solid rgba(0,198,167,.4)}
+.gap .res{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.gap .res .chip{opacity:1;transform:none}
+.chip.miss{background:rgba(230,57,70,.1);color:#ff8b93;border:1px dashed rgba(230,57,70,.45);text-decoration:line-through}
+.gap .divider{height:1px;background:var(--line-d);margin-block:4px}
+.plist{display:grid;gap:22px}
+.pitem{display:flex;gap:16px}
+.pitem .ic{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.05);border:1px solid var(--line-d);color:var(--sl);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.pitem .ic svg{width:20px;height:20px}
+.pitem b{display:block;color:var(--mist);font-size:16px;margin-bottom:4px}
+.pitem p{font-size:14px;color:var(--fog)}
+/* ---- anatomy: one post, fully read ---- */
+.anat{display:grid;grid-template-columns:.92fr 1.08fr;gap:44px;align-items:center}
+.postcard{background:var(--card-l);border:1px solid var(--line-l);border-radius:16px;box-shadow:var(--sh);overflow:hidden}
+.postcard .ph{display:flex;align-items:center;gap:12px;padding:15px 20px;border-bottom:1px solid var(--line-l)}
+.postcard .av{width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--teal);font-family:var(--f-ar);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
+.postcard .ph b{font-size:14px;color:var(--n-text);display:block}
+.postcard .ph span{font-size:11.5px;color:var(--sl)}
+.postcard .body{padding:18px 20px;font-size:17px;color:var(--n-text);direction:rtl;unicode-bidi:plaintext;text-align:start;font-family:var(--f-ar);line-height:1.8}
+.postcard .meta{padding:0 20px 15px;font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;color:var(--sl);direction:ltr;unicode-bidi:plaintext}
+html[lang=ar] .postcard .meta{font-family:var(--f-ar);letter-spacing:0;font-size:11px}
+.reads{display:grid;gap:9px}
+.read{display:grid;grid-template-columns:34px 1fr auto;gap:13px;align-items:center;background:var(--card-l);border:1px solid var(--line-l);border-radius:12px;padding:10px 16px;box-shadow:var(--sh)}
+.read .ic{width:32px;height:32px;border-radius:8px;background:var(--teal-soft);color:var(--teal-ink);display:flex;align-items:center;justify-content:center}
+.read .ic svg{width:16px;height:16px}
+.read b{font-size:13.5px;color:var(--n-text);display:block}
+.read span{display:block;font-size:11.5px;color:var(--sl)}
+.read .val{font-family:var(--f-mono);font-size:10px;font-weight:700;letter-spacing:.06em;padding:5px 10px;border-radius:7px;direction:ltr;unicode-bidi:plaintext;white-space:nowrap}
+html[lang=ar] .read .val{font-family:var(--f-ar);letter-spacing:0;font-size:11px}
+.read .val.pos{background:var(--teal-soft);color:var(--teal-ink)}
+.read .val.neg{background:var(--red-soft);color:#c02736}
+.read .val.mix{background:var(--gold-soft);color:var(--gold-ink)}
+.read .val.tag{background:#F1F5F8;color:var(--b-text)}
+/* ---- pillar cohort tick ---- */
+.pillar .track{overflow:visible}
+.pillar .tick{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--gold);border-radius:2px;z-index:1}
+.ticknote{display:flex;align-items:center;gap:9px}
+.ticknote .tk{width:3px;height:15px;background:var(--gold);display:inline-block;border-radius:2px;flex:0 0 auto}
+/* ---- quadrant dots ---- */
+.qc{position:relative}
+.qdot{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--navy);opacity:.5}
+/* ---- ops ledger ---- */
+.opsled{border:1px solid var(--line-l);border-radius:16px;background:var(--card-l);box-shadow:var(--sh);overflow:hidden}
+.oprow{display:grid;grid-template-columns:150px 220px 1fr;gap:18px;align-items:center;padding:17px 24px;border-top:1px solid var(--line-l)}
+.oprow:first-child{border-top:none}
+.oprow .fr{font-family:var(--f-mono);font-size:10.5px;font-weight:700;letter-spacing:.1em;color:var(--teal-ink);background:var(--teal-soft);border-radius:7px;padding:6px 11px;justify-self:start;direction:ltr;unicode-bidi:isolate;display:inline-flex;align-items:center;gap:7px}
+html[lang=ar] .oprow .fr{font-family:var(--f-ar);letter-spacing:0}
+.oprow.crit .fr{color:#c02736;background:var(--red-soft)}
+.oprow .fr i{width:6px;height:6px;border-radius:50%;background:currentColor;animation:pulse 2.4s infinite}
+.oprow b{font-size:15.5px;color:var(--n-text)}
+.oprow p{font-size:13.5px}
+/* ---- lexicon cloud ---- */
+.lex{position:relative;background:var(--surf);border:1px solid var(--line-d);border-radius:18px;min-height:290px;padding:22px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.lex .lt{font-family:var(--f-mono);font-size:10px;letter-spacing:.18em;color:var(--sl);text-transform:uppercase;direction:ltr;unicode-bidi:isolate}
+html[lang=ar] .lex .lt{font-family:var(--f-ar);letter-spacing:0;font-size:11.5px}
+.lex .word{position:absolute;font-size:14.5px;padding:7px 14px;border-radius:99px;border:1px solid rgba(0,198,167,.35);background:rgba(0,198,167,.08);color:var(--teal);white-space:nowrap;animation:floaty 6s ease-in-out infinite;unicode-bidi:plaintext}
+.lex .word.g{border-color:rgba(201,168,76,.4);background:rgba(201,168,76,.08);color:var(--gold)}
+.lex .word.w{border-color:var(--line-d);background:rgba(255,255,255,.04);color:var(--fog)}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+/* ---- feature rows ---- */
+.feats{display:grid}
+.feat{display:flex;gap:16px;align-items:flex-start;padding:14px 2px;border-bottom:1px solid var(--line-l)}
+.feat:last-child{border-bottom:none}
+.dark .feat,.dark2 .feat{border-color:var(--line-d)}
+.feat .ic{width:38px;height:38px;border-radius:10px;background:var(--teal-soft);color:var(--teal-ink);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.feat .ic svg{width:18px;height:18px}
+.dark .feat .ic,.dark2 .feat .ic{background:rgba(201,168,76,.14);color:var(--gold)}
+.dark2 .feat .ic.t{background:rgba(0,198,167,.14);color:var(--teal)}
+.feat b{display:block;font-size:15px;color:var(--n-text);margin-bottom:2px}
+.dark .feat b,.dark2 .feat b{color:var(--mist)}
+.feat p{font-size:13.5px}
+.dark .feat p,.dark2 .feat p{color:var(--fog)}
+/* ---- creator scorecard ---- */
+.crwrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.score{background:var(--card-l);border:1px solid var(--line-l);border-radius:18px;box-shadow:var(--sh);padding:24px}
+.score .top{display:flex;gap:13px;align-items:center;margin-bottom:18px}
+.score .av{width:50px;height:50px;border-radius:50%;background:linear-gradient(140deg,var(--navy),#1A3550);color:var(--teal);display:flex;align-items:center;justify-content:center;font-family:var(--f-ar);font-weight:700;font-size:18px}
+.score .top b{display:block;font-size:15.5px;color:var(--n-text)}
+.score .top span{font-size:12px;color:var(--sl);font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate}
+.tier{font-family:var(--f-mono);font-size:9.5px;font-weight:700;letter-spacing:.12em;background:var(--gold-soft);color:var(--gold-ink);padding:4px 9px;border-radius:6px;margin-inline-start:auto;direction:ltr}
+.score .mid{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;margin-bottom:14px}
+.donut{position:relative;width:96px;height:96px}
+.donut svg{transform:rotate(-90deg);display:block}
+.donut circle{fill:none;stroke-width:9}
+.donut .bg{stroke:#EDF2F6}
+.donut .fg{stroke:var(--teal);stroke-linecap:round;stroke-dasharray:264;stroke-dashoffset:264;transition:stroke-dashoffset 1.2s cubic-bezier(.2,.7,.3,1) .3s}
+.in .donut .fg{stroke-dashoffset:53}
+.donut .dl{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.donut .dl b{font-family:var(--f-disp);font-size:19px;color:var(--n-text);line-height:1}
+html[lang=ar] .donut .dl b{font-weight:700;font-size:16px}
+.donut .dl span{font-size:8px;letter-spacing:.08em;color:var(--sl);text-transform:uppercase;margin-top:3px;max-width:70px}
+html[lang=ar] .donut .dl span{letter-spacing:0;font-size:9px}
+.sbar{margin-bottom:12px}
+.sbar .sl2{display:flex;justify-content:space-between;font-size:11.5px;color:var(--sl);margin-bottom:5px}
+.sbar .sl2 b{color:var(--n-text)}
+.sbar .track{height:8px;border-radius:5px;background:#EDF2F6;overflow:hidden;position:relative}
+.sbar .fill2{position:absolute;inset-block:0;inset-inline-start:0;width:0;border-radius:5px;background:var(--teal);transition:width 1.1s cubic-bezier(.2,.7,.3,1) .2s}
+.in .sbar .fill2{width:var(--w)}
+.sbar .fill2.g{background:var(--gold)}
+.score .verd{display:flex;align-items:center;gap:9px;background:var(--teal-soft);border:1px solid rgba(0,198,167,.3);border-radius:10px;padding:10px 14px;font-size:12.5px;color:var(--teal-ink);font-weight:600}
+/* ---- market index panel ---- */
+.mi2{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+.ipanel{background:var(--surf);border:1px solid var(--line-d);border-radius:18px;padding:24px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.ipanel .ph2{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;gap:12px}
+.ipanel .ph2 .t{font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;direction:ltr;unicode-bidi:isolate}
+html[lang=ar] .ipanel .ph2 .t{font-family:var(--f-ar);letter-spacing:0;font-size:11.5px}
+.ipanel .wow{font-family:var(--f-mono);font-size:11px;font-weight:700;color:var(--teal);white-space:nowrap;unicode-bidi:plaintext}
+html[lang=ar] .ipanel .wow{font-family:var(--f-ar)}
+.gauge{position:relative;max-width:270px;margin:8px auto 0}
+.gauge svg{width:100%;height:auto;display:block}
+.gauge .arcbg{fill:none;stroke:rgba(255,255,255,.08);stroke-width:14;stroke-linecap:round}
+.gauge .arcfg{fill:none;stroke:url(#ggrad);stroke-width:14;stroke-linecap:round;stroke-dasharray:264;stroke-dashoffset:264;transition:stroke-dashoffset 1.4s cubic-bezier(.2,.7,.3,1) .2s}
+.in .gauge .arcfg{stroke-dashoffset:79}
+.gauge .glab{position:absolute;inset-inline:0;bottom:0;text-align:center}
+.gauge .glab b{display:block;font-family:var(--f-disp);font-size:23px;color:var(--mist)}
+html[lang=ar] .gauge .glab b{font-weight:700}
+.gauge .glab span{font-size:10px;letter-spacing:.1em;color:var(--sl);text-transform:uppercase}
+html[lang=ar] .gauge .glab span{letter-spacing:0;font-size:11px}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.mini .m{background:rgba(255,255,255,.04);border:1px solid var(--line-d);border-radius:10px;padding:11px 13px}
+.mini .m .l2{font-size:9.5px;letter-spacing:.1em;color:var(--sl);text-transform:uppercase;margin-bottom:8px}
+html[lang=ar] .mini .m .l2{letter-spacing:0;font-size:11px}
+.mini .bars{display:flex;gap:5px;align-items:flex-end;height:32px}
+.mini .bars i{flex:1;border-radius:3px 3px 0 0;background:rgba(255,255,255,.12)}
+.mini .bars i.you{background:var(--teal)}
+.mini .bars i.mk{background:var(--gold)}
+.mini .mrows{display:grid;gap:7px;font-size:12px;color:var(--fog)}
+.mini .mrows .up{color:var(--teal)}
+.mini .mrows .dn{color:#ff8b93}
+.ip-note{font-size:11.5px;color:var(--sl);margin-top:12px}
+/* ---- app frame mockup ---- */
+.exwrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.app{background:#0F2033;border:1px solid rgba(13,27,42,.4);border-radius:16px;overflow:hidden;box-shadow:0 30px 70px rgba(13,27,42,.3)}
+.app .chrome{display:flex;align-items:center;gap:6px;padding:11px 16px;background:#0B1826;border-bottom:1px solid var(--line-d)}
+.app .chrome i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.14)}
+.app .chrome .pillg{margin-inline-start:auto;font-family:var(--f-mono);font-size:9px;color:var(--teal);border:1px solid rgba(0,198,167,.4);border-radius:99px;padding:3px 9px;direction:ltr}
+.app .abody{padding:20px}
+.app .averdict{font-family:var(--f-disp);font-size:16.5px;color:#fff;line-height:1.5;margin-bottom:14px}
+html[lang=ar] .app .averdict{font-weight:600}
+.app .akpis{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.app .ak{background:rgba(255,255,255,.04);border:1px solid var(--line-d);border-radius:10px;padding:10px 12px}
+.app .ak .l3{font-size:8.5px;letter-spacing:.1em;color:var(--sl);text-transform:uppercase;margin-bottom:6px}
+html[lang=ar] .app .ak .l3{letter-spacing:0;font-size:10px}
+.app .ak .v3{display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:11.5px;font-weight:700;color:var(--mist);unicode-bidi:plaintext}
+html[lang=ar] .app .ak .v3{font-family:var(--f-ar)}
+.app .up{color:var(--teal)} .app .dn{color:#ff8b93} .app .st2{color:var(--gold)}
+.app .aspark{width:100%;height:38px;margin-top:14px;display:block}
+.app .aspark polyline{fill:none;stroke:var(--teal);stroke-width:2;stroke-linecap:round}
+.app .aspark line{stroke:var(--gold);stroke-dasharray:4 4;stroke-width:1.3}
+.app-cap{font-size:11.5px;color:var(--sl);margin-top:12px}
+/* ---- report covers ---- */
+.rfwrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.covers{position:relative;height:350px}
+.cover{position:absolute;width:200px;height:280px;border-radius:10px;background:linear-gradient(165deg,#13293F,var(--navy));border:1px solid rgba(255,255,255,.1);box-shadow:0 24px 50px rgba(13,27,42,.35);padding:20px;display:flex;flex-direction:column}
+.cover .crule{width:34px;height:3px;background:var(--teal);border-radius:2px;margin-bottom:12px}
+.cover .ct2{font-family:var(--f-disp);font-size:17px;color:#fff;line-height:1.3}
+html[lang=ar] .cover .ct2{font-weight:600}
+.cover .cs2{font-size:10.5px;color:var(--sl);margin-top:7px}
+.cover .cfoot{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
+.cover .conf{font-family:var(--f-mono);font-size:7.5px;letter-spacing:.14em;color:var(--gold);border:1px solid rgba(201,168,76,.5);padding:3px 7px;border-radius:5px;direction:ltr}
+.cover .cmark{width:18px;height:18px;border:2px solid var(--teal);border-radius:50%;position:relative}
+.cover .cmark::after{content:"";position:absolute;inset:4px;background:var(--teal);border-radius:50%}
+.cover.c1{inset-inline-start:0;top:38px;transform:rotate(-5deg);z-index:1}
+.cover.c2{inset-inline-start:27%;top:0;z-index:3}
+.cover.c3{inset-inline-start:54%;top:48px;transform:rotate(5deg);z-index:2}
+.cover.c2 .crule{background:var(--gold)}
+/* ---- trust ledger ---- */
+.tled{columns:2;column-gap:48px}
+.titem{break-inside:avoid;display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line-l)}
+.titem .tick{color:var(--teal-ink);font-weight:800;font-size:16px;flex:0 0 auto}
+.titem b{color:var(--n-text)}
+.titem p{font-size:14px}
+/* ---- contact ---- */
+.cwrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:start;text-align:start}
+.cchan{display:grid;gap:12px}
+.cc{display:flex;gap:16px;align-items:center;background:var(--surf);border:1px solid var(--line-d);border-radius:14px;padding:17px 20px;transition:border-color .3s,transform .3s}
+.cc:hover{border-color:rgba(0,198,167,.45);transform:translateY(-2px)}
+.cc .ic{width:42px;height:42px;border-radius:11px;background:rgba(0,198,167,.13);color:var(--teal);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.cc .ic svg{width:20px;height:20px}
+.cc b{display:block;font-size:14.5px;color:var(--mist)}
+.cc span{font-family:var(--f-mono);font-size:12.5px;color:var(--sl);direction:ltr;unicode-bidi:isolate}
+.cform{background:var(--surf);border:1px solid var(--line-d);border-radius:16px;padding:26px;text-align:start}
+.cform label{display:block;font-size:12px;letter-spacing:.04em;color:var(--sl);margin:0 0 7px;font-weight:600}
+.cform input,.cform textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line-d);border-radius:10px;color:var(--mist);padding:12px 14px;font:inherit;font-size:14px;margin-bottom:15px}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--teal)}
+.cform textarea{min-height:104px;resize:vertical}
+.cform .fnote{font-size:11.5px;color:var(--sl);margin-top:12px}
+/* ---- legal modal ---- */
+.legal{position:fixed;inset:0;z-index:80;background:rgba(6,12,20,.7);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:24px}
+.legal.open{display:flex}
+.lpanel{background:var(--paper);color:var(--b-text);max-width:760px;width:100%;max-height:84vh;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 40px 90px rgba(0,0,0,.5)}
+.lpanel .lhead{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 26px;border-bottom:1px solid var(--line-l);background:#fff}
+.lpanel .lhead h3{font-size:1.2rem}
+.lpanel .ldate{font-family:var(--f-mono);font-size:10.5px;color:var(--sl);direction:ltr;margin-inline-start:auto}
+.lpanel .lx{width:34px;height:34px;border-radius:50%;background:#F1F5F8;color:var(--n-text);font-size:17px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.lpanel .lbody{padding:22px 26px;overflow-y:auto;font-size:14px}
+.lpanel .lbody h4{color:var(--n-text);margin:16px 0 6px;font-size:15px}
+.lpanel .lbody h4:first-child{margin-top:0}
+.lpanel .lbody p{margin-bottom:10px}
+footer .legalinks{display:flex;gap:18px}
+footer .legalinks button{font-size:13px;color:var(--sl);transition:color .25s}
+footer .legalinks button:hover{color:#fff}
 /* ================= responsive ================= */
 @media(max-width:1024px){
+  .probwrap,.anat,.crwrap,.mi2,.exwrap,.rfwrap,.cwrap{grid-template-columns:1fr;gap:40px}
+  .scale{grid-template-columns:repeat(2,1fr)}
+  .tled{columns:1}
   .hero .in{grid-template-columns:1fr;gap:44px;padding-top:140px}
   .mkt,.dial,.menuwrap{grid-template-columns:1fr;gap:44px}
   .ops{grid-template-columns:repeat(2,1fr)}
@@ -374,9 +594,16 @@ footer .soc{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate}
   .nav .cta{display:none}
 }
 @media(max-width:640px){
+  .oprow{grid-template-columns:1fr;gap:7px;padding:15px 20px}
+  .gaprow{grid-template-columns:1fr;gap:8px}
+  .gap .who{display:none}
+  .gap .res{justify-content:flex-start}
+  .scale{grid-template-columns:1fr}
+  .covers{height:300px;transform:scale(.82);transform-origin:top center}
+  .read{grid-template-columns:34px 1fr;grid-auto-rows:auto}
+  .read .val{grid-column:2;justify-self:start}
   .sec{padding-block:68px}
   .g2,.g3,.split,.trust,.ops,.sources{grid-template-columns:1fr}
-  .stats{grid-template-columns:repeat(2,1fr)}
   .pillar{grid-template-columns:1fr;gap:8px}
   .pillar .sc{text-align:start}
   .quoteband{grid-template-columns:1fr;padding:32px 26px}
@@ -413,7 +640,6 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
 <g id="i-x"><path d="M4 4l16 16M20 4 4 20"/></g>
 <g id="i-star"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></g>
 <g id="i-smile"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></g>
-<g id="i-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></g>
 <g id="i-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></g>
 <g id="i-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></g>
 <g id="i-type"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></g>
@@ -448,6 +674,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
 <g id="i-alert"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/></g>
 <g id="i-arrow"><path d="M5 12h14M12 5l7 7-7 7"/></g>
 <g id="i-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></g>
+<g id="i-mail"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></g>
 </defs>
 </svg>
 
@@ -486,18 +713,18 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
   <div class="rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="wrap in hload">
     <div>
-      <span class="eb hl" data-i="hero_eb">AI Restaurant Intelligence · Kuwait & GCC</span>
+      <span class="eb gold hl" data-i="hero_eb">AI Restaurant Intelligence · Kuwait & GCC</span>
       <h1 class="hl" data-i-html="hero_h1">Listen Beyond <span class="tl">Language.</span></h1>
       <p class="sub hl" data-i="hero_sub">Ripple reads everything the market says about food — in Kuwaiti Arabic and English — and turns it into decisions: what happened, what matters, and what to do about it.</p>
       <div class="ctas hl">
-        <a href="#contact" class="btn btn-t" data-i="hero_cta1">Join the pilot</a>
+        <a href="#contact" class="btn btn-t" data-i="hero_cta1">Book a demo</a>
         <a href="#platform" class="btn btn-o" data-i="hero_cta2">See the platform</a>
       </div>
-      <div class="stats hl">
-        <div class="st"><div class="v num" data-count="1541">0</div><div class="l" data-i="st1">Kuwaiti dialect terms</div></div>
-        <div class="st"><div class="v num" data-count="115">0</div><div class="l" data-i="st2">Tracked food creators</div></div>
-        <div class="st"><div class="v num" data-count="1500" data-suffix="+">0</div><div class="l" data-i="st3">Branches read weekly</div></div>
-        <div class="st"><div class="v num" data-count="5">0</div><div class="l" data-i="st4">F&B scoring pillars</div></div>
+      <div class="scale hl">
+        <div class="sc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-type"/></svg></div><div><b data-i="sc1_b">A living Kuwaiti &amp; Khaleeji lexicon</b><span data-i="sc1_s">curated nightly, human-approved</span></div></div>
+        <div class="sc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-users"/></svg></div><div><b data-i="sc2_b">The food community’s leaders, tracked</b><span data-i="sc2_s">every mention matched and scored</span></div></div>
+        <div class="sc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-star"/></svg></div><div><b data-i="sc3_b">Reviews from across Kuwait, weekly</b><span data-i="sc3_s">attributed to the exact branch</span></div></div>
+        <div class="sc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-layers"/></svg></div><div><b data-i="sc4_b">Five pillars, an operator’s lens</b><span data-i="sc4_s">food · service · speed · ambience · value</span></div></div>
       </div>
     </div>
     <div class="hl">
@@ -520,35 +747,33 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
   <div class="wrap">
     <div class="shead rv">
       <span class="eb slate" data-i="pr_eb">The problem</span>
-      <h2 data-i="pr_h">Global tools weren’t built to hear the Gulf</h2>
+      <h2 data-i-html="pr_h">Global tools weren’t built to <span class="gtx">hear the Gulf</span></h2>
       <p class="lead" data-i="pr_lead">Your customers already tell you everything — in Kuwaiti dialect, in Arabizi, in emojis, in reviews. Most platforms simply can’t read it, so the most valuable feedback in your market goes unheard.</p>
     </div>
-    <div class="g3 stag">
-      <div class="dcard">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-globe"/></svg></div>
-        <h3 data-i="pr1_t">Arabic as an afterthought</h3>
-        <p data-i="pr1_p">Kuwaiti and Khaleeji dialect gets filed under Modern Standard Arabic. Right-to-left is a toggle, not a foundation — so meaning, sarcasm and slang are lost.</p>
+    <div class="probwrap">
+      <div class="gap rv">
+        <div class="cap" data-i="gp_c1">What generic tools see</div>
+        <div class="gaprow"><div class="msg">el akel wayed 7elo 😍</div><div class="who"><span class="b glob">?</span></div><div class="res"><span class="chip miss" data-i="gp_m1">unrecognised</span></div></div>
+        <div class="gaprow"><div class="msg">وايد يجنن 🔥</div><div class="who"><span class="b glob">?</span></div><div class="res"><span class="chip miss" data-i="gp_m2">flattened to MSA</span></div></div>
+        <div class="divider"></div>
+        <div class="cap" data-i="gp_c2">The same words, read by Ripple</div>
+        <div class="gaprow"><div class="msg">el akel wayed 7elo 😍</div><div class="who"><span class="b rip">●</span></div><div class="res"><span class="chip pos show" data-i="gp_p1">Positive</span><span class="chip tag show" data-i="gp_p2">Food quality</span><span class="chip gold show" data-i="gp_p3">Kuwaiti</span></div></div>
+        <div class="gaprow"><div class="msg">وايد يجنن 🔥</div><div class="who"><span class="b rip">●</span></div><div class="res"><span class="chip pos show" data-i="gp_p4">High praise</span><span class="chip gold show" data-i="gp_p5">Kuwaiti dialect</span></div></div>
       </div>
-      <div class="dcard">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-chart"/></svg></div>
-        <h3 data-i="pr2_t">Dashboards, not decisions</h3>
-        <p data-i="pr2_p">Enterprise tools assume a full-time analyst reading charts. Most F&B teams don’t have one — and shouldn’t need one to know what to fix.</p>
-      </div>
-      <div class="dcard">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-layers"/></svg></div>
-        <h3 data-i="pr3_t">Benchmarks from elsewhere</h3>
-        <p data-i="pr3_p">Engagement norms drawn from markets nothing like Kuwait make good performance look bad — and real problems look fine.</p>
+      <div class="plist stag">
+        <div class="pitem"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-globe"/></svg></div><div><b data-i="pr1_t">Arabic as an afterthought</b><p data-i="pr1_p">Kuwaiti and Khaleeji dialect gets filed under Modern Standard Arabic. Right-to-left is a toggle, not a foundation — so meaning, sarcasm and slang are lost.</p></div></div>
+        <div class="pitem"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-chart"/></svg></div><div><b data-i="pr2_t">Dashboards, not decisions</b><p data-i="pr2_p">Enterprise tools assume a full-time analyst reading charts. Most F&B teams don’t have one — and shouldn’t need one to know what to fix.</p></div></div>
+        <div class="pitem"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-layers"/></svg></div><div><b data-i="pr3_t">Benchmarks from elsewhere</b><p data-i="pr3_p">Engagement norms drawn from markets nothing like Kuwait make good performance look bad — and real problems look fine.</p></div></div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- ============ platform frame ============ -->
 <section class="sec light" id="platform">
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="fr_eb">The platform</span>
-      <h2 data-i="fr_h">One platform, from signal to decision</h2>
+      <h2 data-i-html="fr_h">One platform, from signal to <span class="gtx">decision</span></h2>
       <p class="lead" data-i="fr_lead">Everything in Ripple belongs to one of four layers. Open it in the morning and know what to do in under ten seconds.</p>
     </div>
     <div class="frame stag" id="frame">
@@ -570,7 +795,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
       <div class="step">
         <div class="n">4</div>
         <h3><span data-i="fr4_t">Act</span><span class="ar">تنفيذ</span></h3>
-        <p data-i="fr4_p">Action cards, reply drafts, reports and the Weekly Radar — delivered, bilingual.</p>
+        <p data-i="fr4_p">Action cards, reply drafts, reports and the Radar — delivered, bilingual.</p>
       </div>
     </div>
     <div style="height:56px"></div>
@@ -590,7 +815,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
         <h3 data-i="sv2_t">Your market</h3>
         <p data-i="sv2_p">The whole market: how Kuwait feels about dining this week, which dishes are rising, which cuisines and areas are strong — always anonymised.</p>
         <ul>
-          <li data-i="sv2_l1">The Weekly Radar & Kuwait Dining Sentiment Index</li>
+          <li data-i="sv2_l1">The Radar & Kuwait Dining Sentiment Index</li>
           <li data-i="sv2_l2">Dish trends, cuisines, areas & white space</li>
           <li data-i="sv2_l3">Creator signal & delivery index (coming soon)</li>
         </ul>
@@ -604,7 +829,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="li_eb">Social Listening · 01</span>
-      <h2 data-i="li_h">Social intelligence with an F&B brain</h2>
+      <h2 data-i-html="li_h">Social intelligence with an F&amp;B <span class="gtx">brain</span></h2>
       <p class="lead" data-i="li_lead">Every post, comment and review — read like a local, scored like an operator.</p>
     </div>
     <div class="sources stag">
@@ -613,54 +838,61 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
       <div class="src"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-x"/></svg></div><div><b>X (Twitter)</b><span data-i="so3">Mentions and conversation</span></div></div>
       <div class="src"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-star"/></svg></div><div><b>Google Reviews</b><span data-i="so4">Reviews, attributed to the right branch</span></div></div>
     </div>
-    <h3 class="rv" style="font-size:1.3rem;margin-bottom:26px" data-i="li_sub">What every signal gets</h3>
-    <div class="g3 stag">
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-smile"/></svg></div><h3 data-i="sg1_t">Sentiment & emotion</h3><p data-i="sg1_p">Positive to negative — and the feeling behind it, sarcasm included.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg></div><h3 data-i="sg2_t">Visit intent</h3><p data-i="sg2_p">Loyalty · Advocacy · Avoid — the signal behind repeat business.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-coffee"/></svg></div><h3 data-i="sg3_t">Dish & menu mentions</h3><p data-i="sg3_p">Every item tracked across English, Arabic and dialect spellings.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-users"/></svg></div><h3 data-i="sg4_t">Competitor & staff mentions</h3><p data-i="sg4_p">Who else is named, and which branch or person it concerns.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-type"/></svg></div><h3 data-i="sg5_t">Dialect profile</h3><p data-i="sg5_p">Kuwaiti, Gulf, MSA or English — analysed accordingly.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-eye"/></svg></div><h3 data-i="sg6_t">Visual & video analysis</h3><p data-i="sg6_p">Composition, on-image Arabic text and CTAs — creative coaching per post.</p></div>
+    <h3 class="rv" style="font-size:1.3rem;margin-bottom:26px" data-i="li_sub">What every signal gets — one post, fully read</h3>
+    <div class="anat">
+      <div class="postcard rv">
+        <div class="ph"><span class="av">ك</span><div><b data-i="pc_n">Kuwait food lover</b><span>Instagram · <span data-i="pc_s">this morning</span></span></div></div>
+        <div class="body">الأكل وايد حلو بس التوصيل تأخر 😤 والموظفين قمة بالذوق</div>
+        <div class="meta" data-i="pc_m">GEO-CAPTURED · SALMIYA · BRAND NEVER TAGGED</div>
+      </div>
+      <div class="reads stag">
+        <div class="read"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-smile"/></svg></div><div><b data-i="rd1_t">Sentiment &amp; emotion</b><span data-i="rd1_s">praise with a frustration edge — sarcasm-checked</span></div><span class="val mix" data-i="rd1_v">MIXED</span></div>
+        <div class="read"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-coffee"/></svg></div><div><b data-i="rd2_t">Food quality</b><span data-i="rd2_s">“the food is so good”</span></div><span class="val pos" data-i="rd2_v">POSITIVE</span></div>
+        <div class="read"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-clock"/></svg></div><div><b data-i="rd3_t">Speed</b><span data-i="rd3_s">“delivery ran late”</span></div><span class="val neg" data-i="rd3_v">NEGATIVE</span></div>
+        <div class="read"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-users"/></svg></div><div><b data-i="rd4_t">Service</b><span data-i="rd4_s">“staff — top manners”</span></div><span class="val pos" data-i="rd4_v">POSITIVE</span></div>
+        <div class="read"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-type"/></svg></div><div><b data-i="rd5_t">Dialect profile</b><span data-i="rd5_s">«وايد» · «بس» — read natively, not translated</span></div><span class="val tag" data-i="rd5_v">KUWAITI</span></div>
+        <div class="read"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg></div><div><b data-i="rd6_t">Branch attribution</b><span data-i="rd6_s">geo-captured — the right kitchen is flagged</span></div><span class="val tag" data-i="rd6_v">SALMIYA</span></div>
+      </div>
     </div>
+    <p class="pnote rv" style="margin-top:22px" data-i="rd_also">Also read on every signal: dish and menu mentions across every spelling, competitor and staff mentions, visit intent, and creative coaching on images and video.</p>
     <div class="geo rv"><b data-i="geo_b">Geo-capture:</b><span data-i="geo_p">guests posting from your venue are caught even when they never tag you.</span></div>
   </div>
 </section>
-
 <!-- ============ pillars ============ -->
 <section class="sec light tight" id="pillars" style="padding-top:24px">
   <div class="wrap">
     <div class="shead rv">
-      <span class="eb" data-i="pi_eb">F&B Intelligence · 02</span>
-      <h2 data-i="pi_h">Five pillars every operator recognises</h2>
+      <span class="eb" data-i="pi_eb">F&amp;B Intelligence · 02</span>
+      <h2 data-i-html="pi_h">Five pillars every operator <span class="gtx">recognises</span></h2>
       <p class="lead" data-i="pi_lead">Every mention and review is scored −1 to +1 on the levers you actually manage — and attributed to the fulfilling branch. A speed complaint lands on the right kitchen, not on the brand average.</p>
     </div>
     <div class="pillars rv" id="pillarbox">
-      <div class="pillar"><div class="nm"><b data-i="pl1">Food Quality</b><span>جودة الأكل</span></div><div class="track"><i class="fill" data-w="41"></i></div><div class="sc">+0.82</div></div>
-      <div class="pillar"><div class="nm"><b data-i="pl2">Service</b><span>الخدمة</span></div><div class="track"><i class="fill" data-w="28"></i></div><div class="sc">+0.55</div></div>
-      <div class="pillar"><div class="nm"><b data-i="pl3">Speed</b><span>السرعة</span></div><div class="track"><i class="fill neg" data-w="16"></i></div><div class="sc neg">−0.31</div></div>
-      <div class="pillar"><div class="nm"><b data-i="pl4">Ambience</b><span>الأجواء</span></div><div class="track"><i class="fill" data-w="33"></i></div><div class="sc">+0.66</div></div>
-      <div class="pillar"><div class="nm"><b data-i="pl5">Value</b><span>القيمة</span></div><div class="track"><i class="fill" data-w="22"></i></div><div class="sc">+0.44</div></div>
+      <div class="pillar"><div class="nm"><b data-i="pl1">Food Quality</b><span>جودة الأكل</span></div><div class="track"><i class="fill" data-w="41"></i><i class="tick" style="inset-inline-start:66%"></i></div><div class="sc">+0.82</div></div>
+      <div class="pillar"><div class="nm"><b data-i="pl2">Service</b><span>الخدمة</span></div><div class="track"><i class="fill" data-w="28"></i><i class="tick" style="inset-inline-start:61%"></i></div><div class="sc">+0.55</div></div>
+      <div class="pillar"><div class="nm"><b data-i="pl3">Speed</b><span>السرعة</span></div><div class="track"><i class="fill neg" data-w="16"></i><i class="tick" style="inset-inline-start:57%"></i></div><div class="sc neg">−0.31</div></div>
+      <div class="pillar"><div class="nm"><b data-i="pl4">Ambience</b><span>الأجواء</span></div><div class="track"><i class="fill" data-w="33"></i><i class="tick" style="inset-inline-start:64%"></i></div><div class="sc">+0.66</div></div>
+      <div class="pillar"><div class="nm"><b data-i="pl5">Value</b><span>القيمة</span></div><div class="track"><i class="fill" data-w="22"></i><i class="tick" style="inset-inline-start:59%"></i></div><div class="sc">+0.44</div></div>
       <p class="pnote" data-i="pi_note">Illustrative scores. “Sentiment fell” tells you something is wrong. “Speed fell while Food stayed strong” tells you what to fix.</p>
+      <p class="pnote ticknote" style="margin-top:10px"><span class="tk"></span><span data-i="pi_tick">The gold tick marks your cuisine cohort’s average — judge against your own market, never foreign benchmarks.</span></p>
     </div>
   </div>
 </section>
-
 <!-- ============ menu intelligence ============ -->
 <section class="sec light" id="menu" style="padding-top:48px">
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="me_eb">Menu Intelligence · 03</span>
-      <h2 data-i="me_h">Your menu, tracked dish by dish</h2>
+      <h2 data-i-html="me_h">Your menu, tracked dish by <span class="gtx">dish</span></h2>
       <p class="lead" data-i="me_lead">From “people are talking” to “this dish, this sentiment, this action.” Self-calibrating against your own menu’s averages — not foreign benchmarks.</p>
     </div>
     <div class="menuwrap">
       <div class="quad rv">
         <span class="ax ay" data-i="me_ax_y">Sentiment ↑</span>
         <div class="grid">
-          <div class="qc gems"><b data-i="q1_t">Hidden Gems</b><span data-i="q1_p">Loved but unseen — market harder</span></div>
-          <div class="qc stars"><b data-i="q2_t">Stars</b><span data-i="q2_p">Protect, promote, feature</span></div>
-          <div class="qc delist"><b data-i="q3_t">Delist candidates</b><span data-i="q3_p">Low buzz, negative — review or reinvent</span></div>
-          <div class="qc fix"><b data-i="q4_t">Fix-Now</b><span data-i="q4_p">High buzz, negative — urgent operational fix</span></div>
+          <div class="qc gems"><span class="qdot" style="top:24%;inset-inline-start:30%"></span><span class="qdot" style="top:44%;inset-inline-start:60%"></span><b data-i="q1_t">Hidden Gems</b><span data-i="q1_p">Loved but unseen — market harder</span></div>
+          <div class="qc stars"><span class="qdot" style="top:20%;inset-inline-start:64%"></span><span class="qdot" style="top:38%;inset-inline-start:36%"></span><span class="qdot" style="top:52%;inset-inline-start:74%"></span><b data-i="q2_t">Stars</b><span data-i="q2_p">Protect, promote, feature</span></div>
+          <div class="qc delist"><span class="qdot" style="top:30%;inset-inline-start:42%"></span><b data-i="q3_t">Delist candidates</b><span data-i="q3_p">Low buzz, negative — review or reinvent</span></div>
+          <div class="qc fix"><span class="qdot" style="top:26%;inset-inline-start:56%"></span><span class="qdot" style="top:46%;inset-inline-start:28%"></span><b data-i="q4_t">Fix-Now</b><span data-i="q4_p">High buzz, negative — urgent operational fix</span></div>
         </div>
         <span class="ax axx" data-i="me_ax_x">Talk volume →</span>
       </div>
@@ -680,32 +912,45 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="op_eb">Operations · 04</span>
-      <h2 data-i="op_h">From signal to action, on a clock</h2>
+      <h2 data-i-html="op_h">From signal to action, on a <span class="gtx">clock</span></h2>
       <p class="lead" data-i="op_lead">Intelligence that arrives ranked, timed and ready to act on.</p>
     </div>
-    <div class="ops stag">
-      <div class="op crit"><span class="fr" data-i="op1_f">Every 5 min</span><b data-i="op1_t">Crisis Radar</b><p data-i="op1_p">Food-safety and severe-service vocabulary scanned around the clock, in dialect. Critical hits alert your team instantly.</p></div>
-      <div class="op"><span class="fr" data-i="op2_f">Every 15 min</span><b data-i="op2_t">Reply drafting</b><p data-i="op2_p">Negative comments and questions staged with drafts in your brand voice. You approve — nothing auto-posts.</p></div>
-      <div class="op"><span class="fr" data-i="op3_f">Weekly</span><b data-i="op3_t">Fix-First priorities</b><p data-i="op3_p">Every open issue ranked by one impact score — severity × volume × trend. The top three lead every weekly report.</p></div>
-      <div class="op"><span class="fr" data-i="op4_f">Weekly</span><b data-i="op4_t">Visit-intent signal</b><p data-i="op4_p">Loyalty · Advocacy · Avoid — the retention ratio behind repeat business, tracked as a weekly percentage.</p></div>
-      <div class="op"><span class="fr" data-i="op5_f">Multi-branch</span><b data-i="op5_t">Branch leaderboard</b><p data-i="op5_p">Per-branch pillar ranking. Any branch drifting below the brand average is flagged, with the evidence attached.</p></div>
+    <div class="opsled rv">
+      <div class="oprow crit"><span class="fr"><i></i><span data-i="op1_f">Every 5 min</span></span><b data-i="op1_t">Crisis Radar</b><p data-i="op1_p">Food-safety and severe-service vocabulary scanned around the clock, in dialect. Critical hits alert your team instantly.</p></div>
+      <div class="oprow"><span class="fr"><i></i><span data-i="op2_f">Every 15 min</span></span><b data-i="op2_t">Reply drafting</b><p data-i="op2_p">Negative comments and questions staged with drafts in your brand voice. You approve — nothing auto-posts.</p></div>
+      <div class="oprow"><span class="fr"><i></i><span data-i="op3_f">Weekly</span></span><b data-i="op3_t">Fix-First priorities</b><p data-i="op3_p">Every open issue ranked by one impact score — severity × volume × trend. The top three lead every weekly report.</p></div>
+      <div class="oprow"><span class="fr"><i></i><span data-i="op4_f">Weekly</span></span><b data-i="op4_t">Visit-intent signal</b><p data-i="op4_p">Loyalty · Advocacy · Avoid — the retention ratio behind repeat business, tracked as a weekly percentage.</p></div>
+      <div class="oprow"><span class="fr"><i></i><span data-i="op5_f">Multi-branch</span></span><b data-i="op5_t">Branch leaderboard</b><p data-i="op5_p">Per-branch pillar ranking. Any branch drifting below the brand average is flagged, with the evidence attached.</p></div>
     </div>
   </div>
 </section>
-
 <!-- ============ dialect engine ============ -->
 <section class="sec dark2" id="dialect">
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="de_eb">Dialect Intelligence · 05</span>
-      <h2 data-i="de_h">The Ripple Dialect Engine™</h2>
+      <h2 data-i-html="de_h">The Ripple <span class="gtx">Dialect Engine™</span></h2>
       <p class="lead" data-i="de_lead">Kuwaiti and Khaleeji Arabic as the foundation — not a localisation step.</p>
     </div>
     <div class="dial">
       <div class="rv">
-        <div class="bignum num" data-count="1541">0</div>
-        <div class="bl" data-i="de_num_l">Curated Kuwaiti & Khaleeji dialect terms — learning nightly</div>
-        <p style="margin-top:22px;font-size:14.5px" data-i="de_num_p">New Gulf terms are mined every night from real captions and approved by a human before use. Heard accurately: praise and complaints in the customer’s own words — not what an MSA-trained model thinks they said.</p>
+        <div class="lex">
+          <div class="lt" data-i="lx_t">Ripple Dialect Lexicon · living</div>
+          <span class="word" style="top:24%;inset-inline-start:8%">وايد</span>
+          <span class="word" style="top:20%;inset-inline-start:38%;animation-delay:.7s">يجنن</span>
+          <span class="word w" style="top:22%;inset-inline-start:68%;animation-delay:1.4s">7elo</span>
+          <span class="word" style="top:42%;inset-inline-start:20%;animation-delay:2.1s">خوش</span>
+          <span class="word" style="top:44%;inset-inline-start:52%;animation-delay:.4s">يهبل</span>
+          <span class="word w" style="top:40%;inset-inline-start:80%;animation-delay:1.8s">wayed</span>
+          <span class="word g" style="top:62%;inset-inline-start:10%;animation-delay:1.1s">كرك</span>
+          <span class="word" style="top:64%;inset-inline-start:36%;animation-delay:2.5s">لذيذ</span>
+          <span class="word g" style="top:60%;inset-inline-start:62%;animation-delay:.9s">عريكة</span>
+          <span class="word w" style="top:80%;inset-inline-start:18%;animation-delay:1.6s">zain</span>
+          <span class="word" style="top:82%;inset-inline-start:46%;animation-delay:.2s">تعبان</span>
+          <span class="word g" style="top:80%;inset-inline-start:74%;animation-delay:2.2s">شاورما</span>
+        </div>
+        <div class="bl" style="margin-top:20px;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--sl);font-weight:600" data-i="de_num_l">A living lexicon — growing every night, human-approved</div>
+        <p style="margin-top:12px;font-size:14.5px" data-i="de_num_p">Heard accurately: praise and complaints in the customer’s own words — not what an MSA-trained model thinks they said. New Gulf terms are mined from real captions every night and approved by a person before use.</p>
       </div>
       <div class="flow rv">
         <div class="frow"><span class="a">el akel wayed 7elo 😍</span><span class="arr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></span><span class="b">الأكل وايد حلو</span></div>
@@ -713,30 +958,42 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
         <div class="frow"><span class="a">karak · 3reeka · shawarma</span><span class="arr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></span><span class="b">كرك · عريكة · شاورما</span></div>
       </div>
     </div>
-    <div class="g3 stag" style="grid-template-columns:repeat(4,1fr)" id="dial4">
-      <div class="dcard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-type"/></svg></div><h3 data-i="de1_t">Arabizi, normalised</h3><p data-i="de1_p">“7elo” and “wayed” read as the Arabic they are — dishes matched across spellings and slang.</p></div>
-      <div class="dcard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-eye"/></svg></div><h3 data-i="de2_t">Paid-collab cues</h3><p data-i="de2_p">Partnership signals detected in Arabic and English — بالتعاون · إعلان · ممول · #ad.</p></div>
-      <div class="dcard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-moon"/></svg></div><h3 data-i="de3_t">Hijri-aware calendar</h3><p data-i="de3_p">36+ GCC occasions — from Ramadan to National Day — inside every analysis.</p></div>
-      <div class="dcard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-globe"/></svg></div><h3 data-i="de4_t">Built to travel</h3><p data-i="de4_p">Dialect context is set per market — Kuwait today, the wider Gulf next.</p></div>
+    <div class="g2 stag" style="gap:6px 48px">
+      <div class="feat"><div class="ic t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-type"/></svg></div><div><b data-i="de1_t">Arabizi, normalised</b><p data-i="de1_p">“7elo” and “wayed” read as the Arabic they are — dishes matched across spellings and slang.</p></div></div>
+      <div class="feat"><div class="ic t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-eye"/></svg></div><div><b data-i="de2_t">Paid-collab cues</b><p data-i="de2_p">Partnership signals detected in Arabic and English — بالتعاون · إعلان · ممول · ‎#ad.</p></div></div>
+      <div class="feat"><div class="ic t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-moon"/></svg></div><div><b data-i="de3_t">Hijri-aware calendar</b><p data-i="de3_p">The full GCC calendar of occasions — from Ramadan to National Day — inside every analysis.</p></div></div>
+      <div class="feat"><div class="ic t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-globe"/></svg></div><div><b data-i="de4_t">Built to travel</b><p data-i="de4_p">Dialect context is set per market — Kuwait today, the wider Gulf next.</p></div></div>
     </div>
   </div>
 </section>
-
 <!-- ============ creators ============ -->
 <section class="sec light" id="creators">
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="cr_eb">Creator Intelligence · 06</span>
-      <h2 data-i="cr_h">KOL intelligence — creators, decoded</h2>
-      <p class="lead" data-i="cr_lead">115 tracked Kuwait F&B creators. Every mention matched, scored and logged with reach and sentiment — checked before you pay.</p>
+      <h2 data-i-html="cr_h">KOL intelligence — creators, <span class="gtx">decoded</span></h2>
+      <p class="lead" data-i="cr_lead">Kuwait’s food community leaders, tracked. Every mention matched, scored and logged with reach and sentiment — checked before you pay.</p>
     </div>
-    <div class="g3 stag">
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-eye"/></svg></div><h3 data-i="cr1_t">Organic vs paid</h3><p data-i="cr1_p">Partnerships detected from Arabic and English cues — بالتعاون · إعلان · #ad.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-dollar"/></svg></div><h3 data-i="cr2_t">Earned media value</h3><p data-i="cr2_p">What a creator’s coverage is actually worth to your brand, in Kuwaiti dinars.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pie"/></svg></div><h3 data-i="cr3_t">Share of influence</h3><p data-i="cr3_p">Your slice of creator attention versus your competitors’.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-search"/></svg></div><h3 data-i="cr4_t">Booking confidence</h3><p data-i="cr4_p">Reach, food-fit and audience reaction — checked before you pay.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-refresh"/></svg></div><h3 data-i="cr5_t">Freshness coach</h3><p data-i="cr5_p">Overexposed faces flagged; well-matched, under-booked creators surfaced.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-trend"/></svg></div><h3 data-i="cr6_t">Rising brands</h3><p data-i="cr6_p">Which names Kuwait’s creators are pushing this week.</p></div>
+    <div class="crwrap">
+      <div class="score rv">
+        <div class="top"><span class="av">م</span><div><b data-i="kc_n">Kuwait food creator</b><span>@creator · Instagram</span></div><span class="tier">MACRO</span></div>
+        <div class="mid">
+          <div class="donut"><svg viewBox="0 0 96 96" width="96" height="96"><circle class="bg" cx="48" cy="48" r="42"/><circle class="fg" cx="48" cy="48" r="42"/></svg><div class="dl"><b data-i="kc_dv">High</b><span data-i="kc_d">F&amp;B ratio</span></div></div>
+          <div>
+            <div class="sbar"><div class="sl2"><span data-i="kc_b1">Organic share</span><b data-i="kc_b1v">Strong</b></div><div class="track"><i class="fill2" style="--w:78%"></i></div></div>
+            <div class="sbar"><div class="sl2"><span data-i="kc_b2">Earned media value</span><b data-i="kc_b2v">High</b></div><div class="track"><i class="fill2 g" style="--w:66%"></i></div></div>
+          </div>
+        </div>
+        <div class="verd"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg><span data-i="kc_v">Book with confidence — reach, food-fit and audience reaction, checked.</span></div>
+      </div>
+      <div class="feats stag">
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-eye"/></svg></div><div><b data-i="cr1_t">Organic vs paid</b><p data-i="cr1_p">Partnerships detected from Arabic and English cues — بالتعاون · إعلان · ‎#ad.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-dollar"/></svg></div><div><b data-i="cr2_t">Earned media value</b><p data-i="cr2_p">What a creator’s coverage is actually worth to your brand, in Kuwaiti dinars.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pie"/></svg></div><div><b data-i="cr3_t">Share of influence</b><p data-i="cr3_p">Your slice of creator attention versus your competitors’.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-search"/></svg></div><div><b data-i="cr4_t">Booking confidence</b><p data-i="cr4_p">Reach, food-fit and audience reaction — checked before you pay.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-refresh"/></svg></div><div><b data-i="cr5_t">Freshness coach</b><p data-i="cr5_p">Overexposed faces flagged; well-matched, under-booked creators surfaced.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-trend"/></svg></div><div><b data-i="cr6_t">Rising brands</b><p data-i="cr6_p">Which names Kuwait’s creators are pushing this week.</p></div></div>
+      </div>
     </div>
     <div class="quoteband rv">
       <span class="mark" aria-hidden="true">“</span>
@@ -747,13 +1004,12 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
     </div>
   </div>
 </section>
-
 <!-- ============ market intelligence ============ -->
 <section class="sec dark" id="market">
   <div class="wrap">
     <div class="shead rv">
       <span class="eb gold" data-i="mk_eb">Market Intelligence · 07</span>
-      <h2 data-i="mk_h">The Weekly Radar — your market, in four lanes</h2>
+      <h2 data-i-html="mk_h">The Radar — your market, in <span class="gtx">four lanes</span></h2>
       <p class="lead" data-i="mk_lead">Your dashboard tells you what’s happening to your brand. The Radar tells you what’s happening to your market — analysed once, shared with every subscriber, and no brand is ever named.</p>
     </div>
     <div class="mkt">
@@ -771,75 +1027,112 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
         <span class="lb" style="bottom:8%;left:50%;transform:translateX(-50%)" data-i="mk_l4">Reviews</span>
       </div>
       <div class="lanes stag">
-        <div class="lane"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-news"/></svg></div><div><b data-i="ln1_t">News</b><p data-i="ln1_p">Global and regional F&B press, distilled to what matters — deals, formats, trends, risks — each with a “coming to your market?” read.</p></div></div>
-        <div class="lane"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mic"/></svg></div><div><b data-i="ln2_t">Audio</b><p data-i="ln2_p">F&B podcasts mined weekly for operator playbooks and hard numbers — English shows plus a Gulf-Arabic archive.</p></div></div>
+        <div class="lane"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-news"/></svg></div><div><b data-i="ln1_t">News</b><p data-i="ln1_p">Global and regional F&amp;B press, distilled to what matters — deals, formats, trends, risks — each with a “coming to your market?” read.</p></div></div>
+        <div class="lane"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mic"/></svg></div><div><b data-i="ln2_t">Audio</b><p data-i="ln2_p">F&amp;B podcasts mined weekly for operator playbooks and hard numbers — English shows plus a Gulf-Arabic archive.</p></div></div>
         <div class="lane"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-users"/></svg></div><div><b data-i="ln3_t">Creator signal</b><p data-i="ln3_p">What Kuwait’s food creators feature this week — cuisines, dishes, openings and moves.</p></div></div>
         <div class="lane"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-msg"/></svg></div><div><b data-i="ln4_t">Customer reviews</b><p data-i="ln4_p">The weekly Kuwait dining index, built from real customer reviews — anonymised, cuisine- and area-level.</p></div></div>
       </div>
     </div>
     <div class="shead rv">
       <h2 style="font-size:clamp(1.6rem,2.8vw,2.2rem)" data-i="mk2_h">Kuwait customer reviews, every week</h2>
-      <p class="lead" data-i="mk2_lead">Public Google reviews from Kuwait’s 1,500 most-reviewed branches, collected every Sunday and analysed by brand, cuisine and area on the same five pillars.</p>
+      <p class="lead" data-i="mk2_lead">Public Google reviews from Kuwait’s most-reviewed branches, collected every week and analysed by brand, cuisine and area on the same five pillars.</p>
     </div>
-    <div class="g3 stag">
-      <div class="dcard goldy"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-act"/></svg></div><h3 data-i="mi1_t">Dining Sentiment Index</h3><p data-i="mi1_p">The national mood of dining out, tracked week over week.</p></div>
-      <div class="dcard goldy"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-target"/></svg></div><h3 data-i="mi2_t">You vs market</h3><p data-i="mi2_p">Your pillars against your cuisine cohort and the national line — with your rank.</p></div>
-      <div class="dcard goldy"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-home"/></svg></div><h3 data-i="mi3_t">Openings & closings</h3><p data-i="mi3_p">New places on the map and confirmed closures, by area and cuisine.</p></div>
-      <div class="dcard goldy"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg></div><h3 data-i="mi4_t">White space</h3><p data-i="mi4_p">Under-served cuisine × district combinations — signal for your next location.</p></div>
-      <div class="dcard goldy"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-act"/></svg></div><h3 data-i="mi5_t">Dish lifecycle</h3><p data-i="mi5_p">Trending dishes staged: emerging → accelerating → peaking → fading.</p></div>
-      <div class="dcard goldy"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bub"/></svg></div><h3 data-i="mi6_t">Voice of the customer</h3><p data-i="mi6_p">One recurring, anonymised pattern each week — with the operational fix it implies.</p></div>
+    <div class="mi2">
+      <div class="ipanel rv">
+        <div class="ph2"><span class="t" data-i="ip_t">Kuwait Dining Sentiment Index</span><span class="wow">▲ <span data-i="ip_w">improving</span></span></div>
+        <div class="gauge">
+          <svg viewBox="0 0 200 112">
+            <defs><linearGradient id="ggrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00C6A7"/><stop offset="1" stop-color="#C9A84C"/></linearGradient></defs>
+            <path class="arcbg" d="M 16 104 A 84 84 0 0 1 184 104"/>
+            <path class="arcfg" d="M 16 104 A 84 84 0 0 1 184 104"/>
+          </svg>
+          <div class="glab"><b data-i="ip_g">Healthy</b><span data-i="ip_gs">this week’s market read</span></div>
+        </div>
+        <div class="mini">
+          <div class="m"><div class="l2" data-i="ip_m1">You vs market — pillars</div><div class="bars"><i class="you" style="height:74%"></i><i class="mk" style="height:58%"></i><i style="height:8%"></i><i class="you" style="height:46%"></i><i class="mk" style="height:62%"></i><i style="height:8%"></i><i class="you" style="height:82%"></i><i class="mk" style="height:66%"></i></div></div>
+          <div class="m"><div class="l2" data-i="ip_m2">Openings &amp; closings</div><div class="mrows"><span><span class="up">▲</span> <span data-i="ip_o">New spots mapped weekly</span></span><span><span class="dn">▼</span> <span data-i="ip_c">Closures confirmed, by area</span></span></div></div>
+        </div>
+        <p class="ip-note" data-i="ip_n">Illustrative view — the live index is computed weekly from real customer reviews.</p>
+      </div>
+      <div class="feats stag">
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-act"/></svg></div><div><b data-i="mi1_t">Dining Sentiment Index</b><p data-i="mi1_p">The national mood of dining out, tracked week over week.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-target"/></svg></div><div><b data-i="mi2_t">You vs market</b><p data-i="mi2_p">Your pillars against your cuisine cohort and the national line — with your rank.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-home"/></svg></div><div><b data-i="mi3_t">Openings &amp; closings</b><p data-i="mi3_p">New places on the map and confirmed closures, by area and cuisine.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg></div><div><b data-i="mi4_t">White space</b><p data-i="mi4_p">Under-served cuisine × district combinations — signal for your next location.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-trend"/></svg></div><div><b data-i="mi5_t">Dish lifecycle</b><p data-i="mi5_p">Trending dishes staged: emerging → accelerating → peaking → fading.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bub"/></svg></div><div><b data-i="mi6_t">Voice of the customer</b><p data-i="mi6_p">One recurring, anonymised pattern each week — with the operational fix it implies.</p></div></div>
+      </div>
     </div>
     <div class="anon rv"><b data-i="an_b">Anonymised by design.</b> <span data-i="an_p">Only cuisine- and area-level aggregates are shown — no competitor is ever named. Also in the programme: the Quarterly Kuwait Briefing, and</span> <span class="kdsi">KDSI · <span data-i="an_soon">coming soon</span></span></div>
   </div>
 </section>
-
 <!-- ============ experience ============ -->
 <section class="sec light" id="experience">
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="ex_eb">Experience · 08</span>
-      <h2 data-i="ex_h">Designed for owners, not analysts</h2>
+      <h2 data-i-html="ex_h">Designed for owners, not <span class="gtx">analysts</span></h2>
       <p class="lead" data-i="ex_lead">Calm density: information-rich, never overwhelming — in Arabic and English equally.</p>
     </div>
-    <div class="g3 stag">
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-layout"/></svg></div><h3 data-i="ex1_t">Three clicks, max</h3><p data-i="ex1_p">Seventeen screens, one shell — no task lives deeper than three clicks. No manual, no analyst.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-globe"/></svg></div><h3 data-i="ex2_t">Arabic ⇄ English, one tap</h3><p data-i="ex2_p">A fully mirrored right-to-left interface — 560+ translated strings, not a translation layer.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-moon"/></svg></div><h3 data-i="ex3_t">Dark & light themes</h3><p data-i="ex3_p">A calm, premium dark theme by default; light mode is one tap away.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-target"/></svg></div><h3 data-i="ex4_t">Answer before question</h3><p data-i="ex4_p">Every page opens with the verdict. Charts below are evidence, not the message.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bub"/></svg></div><h3 data-i="ex5_t">Ask Ripple</h3><p data-i="ex5_p">Ask in plain language — “what should I fix this week?” — and get an evidenced answer with the data attached.</p></div>
-      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg></div><h3 data-i="ex6_t">Honest by design</h3><p data-i="ex6_p">Only measured data, clearly labelled and stamped for freshness. Nothing is estimated, padded or dressed up.</p></div>
+    <div class="exwrap">
+      <div class="rv">
+        <div class="app">
+          <div class="chrome"><i></i><i></i><i></i><span class="pillg">EN ⇄ ع</span></div>
+          <div class="abody">
+            <div class="averdict" data-i="ap_v">“Speed dipped at one branch this week — replies are drafted and waiting for your approval.”</div>
+            <div class="akpis">
+              <div class="ak"><div class="l3" data-i="ap_k1">Brand health</div><div class="v3"><span class="up">▲</span> <span data-i="ap_k1v">Strong</span></div></div>
+              <div class="ak"><div class="l3" data-i="ap_k2">CX score</div><div class="v3"><span class="st2">●</span> <span data-i="ap_k2v">Steady</span></div></div>
+              <div class="ak"><div class="l3" data-i="ap_k3">Sentiment</div><div class="v3"><span class="up">▲</span> <span data-i="ap_k3v">Rising</span></div></div>
+            </div>
+            <svg class="aspark" viewBox="0 0 300 38" preserveAspectRatio="none"><line x1="0" y1="22" x2="300" y2="22"/><polyline points="0,30 34,26 68,28 102,21 136,23 170,16 204,18 238,11 270,13 300,7"/></svg>
+          </div>
+        </div>
+        <p class="app-cap" data-i="ap_c">Concept view of the Ripple dashboard — dark theme, verdict first, cohort line in gold.</p>
+      </div>
+      <div class="feats stag">
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-layout"/></svg></div><div><b data-i="ex1_t">Three clicks, max</b><p data-i="ex1_p">Every screen in one shell — no task lives deeper than three clicks. No manual, no analyst.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-globe"/></svg></div><div><b data-i="ex2_t">Arabic ⇄ English, one tap</b><p data-i="ex2_p">A fully mirrored right-to-left interface — every string translated, not a translation layer.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-moon"/></svg></div><div><b data-i="ex3_t">Dark &amp; light themes</b><p data-i="ex3_p">A calm, premium dark theme by default; light mode is one tap away.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-target"/></svg></div><div><b data-i="ex4_t">Answer before question</b><p data-i="ex4_p">Every page opens with the verdict. Charts below are evidence, not the message.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bub"/></svg></div><div><b data-i="ex5_t">Ask Ripple</b><p data-i="ex5_p">Ask in plain language — “what should I fix this week?” — and get an evidenced answer with the data attached.</p></div></div>
+        <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg></div><div><b data-i="ex6_t">Honest by design</b><p data-i="ex6_p">Only measured data, clearly labelled and stamped for freshness. Nothing is estimated, padded or dressed up.</p></div></div>
+      </div>
     </div>
   </div>
 </section>
-
 <!-- ============ rhythm + reports ============ -->
 <section class="sec light" id="reports" style="padding-top:24px">
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="rh_eb">The rhythm · 09</span>
-      <h2 data-i="rh_h">Intelligence on a schedule you can feel</h2>
+      <h2 data-i-html="rh_h">Intelligence on a schedule you can <span class="gtx">feel</span></h2>
       <p class="lead" data-i="rh_lead">Delivered as crafted, bilingual, branded reports — in your inbox, in your language. Crafted documents, not raw exports.</p>
     </div>
     <div class="rhythm stag" style="margin-bottom:72px">
       <div class="rt"><span class="dot"></span><span class="fr" data-i="rt1_f">Every 5 minutes</span><b data-i="rt1_t">Crisis watch</b><p data-i="rt1_p">Across comments, mentions and reviews — critical issues alert your team instantly.</p></div>
-      <div class="rt"><span class="dot"></span><span class="fr" data-i="rt2_f">Every day</span><b data-i="rt2_t">Visual intelligence report</b><p data-i="rt2_p">A per-post creative and engagement read on yesterday’s content.</p></div>
-      <div class="rt"><span class="dot"></span><span class="fr" data-i="rt3_f">Every week</span><b data-i="rt3_t">The weekly heartbeat</b><p data-i="rt3_p">Your performance report on Sunday, the four-lane Weekly Radar on Monday, and the Kuwait customer-reviews index.</p></div>
+      <div class="rt"><span class="dot"></span><span class="fr" data-i="rt2_f">Every day</span><b data-i="rt2_t">The daily creative read</b><p data-i="rt2_p">A per-post creative and engagement read on yesterday’s content.</p></div>
+      <div class="rt"><span class="dot"></span><span class="fr" data-i="rt3_f">Every week</span><b data-i="rt3_t">The weekly heartbeat</b><p data-i="rt3_p">Your performance report on Sunday, the four-lane Radar on Monday, and the Kuwait customer-reviews index.</p></div>
       <div class="rt"><span class="dot"></span><span class="fr" data-i="rt4_f">Every month</span><b data-i="rt4_t">The strategic digest</b><p data-i="rt4_p">Trends, benchmarks and the competitive picture — the full-spectrum month.</p></div>
       <div class="rt"><span class="dot"></span><span class="fr" data-i="rt5_f">Every occasion</span><b data-i="rt5_t">The GCC calendar, woven in</b><p data-i="rt5_p">Ramadan, Eid, National Day — seasonal items are judged in season.</p></div>
     </div>
-    <h3 class="rv" style="font-size:1.3rem;margin-bottom:22px" data-i="rp_sub">The report family</h3>
-    <div class="tblwrap rv">
-      <table class="rp">
-        <thead><tr><th data-i="rp_c1">Report</th><th data-i="rp_c2">Cadence</th><th data-i="rp_c3">What it covers</th></tr></thead>
-        <tbody>
-          <tr><td><b data-i="rp1_t">Daily Digest</b></td><td class="fr" data-i="rp1_c">Twice daily</td><td data-i="rp1_p">The day’s movements and open items — the emailed twin of the Today brief.</td></tr>
-          <tr><td><b data-i="rp2_t">Unified Weekly Report</b></td><td class="fr" data-i="rp2_c">Every Sunday</td><td data-i="rp2_p">The full week across your brand: posts, engagement, sentiment, pillars and customer reviews (~12 pages).</td></tr>
-          <tr><td><b data-i="rp3_t">Weekly Radar (Market)</b></td><td class="fr" data-i="rp3_c">Every Monday</td><td data-i="rp3_p">The four-lane market issue — News, Audio, Creator Signal, Customer Reviews (~8 pages).</td></tr>
-          <tr><td><b data-i="rp4_t">Competitor Report</b></td><td class="fr" data-i="rp4_c">Weekly</td><td data-i="rp4_p">Your tracked set head-to-head, with the written intelligence brief (~8 pages).</td></tr>
-          <tr><td><b data-i="rp5_t">Monthly Intelligence</b></td><td class="fr" data-i="rp5_c">1st of month</td><td data-i="rp5_p">The full-spectrum month: brand, competitors and market position (~18 pages).</td></tr>
-          <tr><td><b data-i="rp6_t">Custom Range</b></td><td class="fr" data-i="rp6_c">On demand</td><td data-i="rp6_p">Any period, any sections — generated when you need it. Every export watermarked.</td></tr>
-        </tbody>
-      </table>
+    <div class="rfwrap">
+      <div class="covers rv" aria-hidden="true">
+        <div class="cover c1"><div class="crule"></div><div class="ct2" data-i="rf_c1">The Week, Unified</div><div class="cs2" data-i="rf_c1s">Your brand, front to back</div><div class="cfoot"><span class="conf">CONFIDENTIAL</span><span class="cmark"></span></div></div>
+        <div class="cover c2"><div class="crule"></div><div class="ct2" data-i="rf_c2">The Radar</div><div class="cs2" data-i="rf_c2s">Your market, in four lanes</div><div class="cfoot"><span class="conf">CONFIDENTIAL</span><span class="cmark"></span></div></div>
+        <div class="cover c3"><div class="crule"></div><div class="ct2" data-i="rf_c3">The Month, in Depth</div><div class="cs2" data-i="rf_c3s">Trends, benchmarks, position</div><div class="cfoot"><span class="conf">CONFIDENTIAL</span><span class="cmark"></span></div></div>
+      </div>
+      <div>
+        <h3 class="rv" style="font-size:1.3rem;margin-bottom:10px" data-i="rp_sub">The report family</h3>
+        <p class="rv" style="font-size:14.5px;margin-bottom:18px" data-i="rf_lead">Dashboards are for questions; reports are for rhythm. Every Ripple report is a crafted, bilingual document — designed, not exported.</p>
+        <div class="feats stag">
+          <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-edit"/></svg></div><div><b data-i="rf1_t">Crafted, not exported</b><p data-i="rf1_p">Designed PDFs on the same visual system as the dashboard — documents you’d be proud to forward.</p></div></div>
+          <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-target"/></svg></div><div><b data-i="rf2_t">Verdict-first</b><p data-i="rf2_p">Every report opens with the conclusion; the charts underneath are the evidence.</p></div></div>
+          <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-globe"/></svg></div><div><b data-i="rf3_t">Bilingual by construction</b><p data-i="rf3_p">Arabic and English as equals — every label, every explanation, properly mirrored.</p></div></div>
+          <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-cal"/></svg></div><div><b data-i="rf4_t">From the day’s pulse to the strategic picture</b><p data-i="rf4_p">A family that covers your day, your week, your month and your occasions — and any custom range, on demand.</p></div></div>
+          <div class="feat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-shield"/></svg></div><div><b data-i="rf5_t">Watermarked &amp; archived</b><p data-i="rf5_p">Every export carries your name, a timestamp and a bilingual confidential mark — and lands in your in-app archive.</p></div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -849,7 +1142,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
   <div class="wrap">
     <div class="shead rv">
       <span class="eb" data-i="wh_eb">Why Ripple · 10</span>
-      <h2 data-i="wh_h">Depth beats breadth in F&B</h2>
+      <h2 data-i-html="wh_h">Depth beats <span class="gtx">breadth</span> in F&B</h2>
       <p class="lead" data-i="wh_lead">Where the category competes on volume, Ripple competes on understanding your market.</p>
     </div>
     <div class="tblwrap rv">
@@ -857,7 +1150,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
         <thead><tr><th data-i="cm_c0"></th><th class="rip">Ripple</th><th data-i="cm_c2">Global enterprise platforms</th><th data-i="cm_c3">Regional Arabic-first suites</th></tr></thead>
         <tbody>
           <tr><td><b data-i="cm1_t">Vertical F&B depth</b><br><span style="font-size:12.5px" data-i="cm1_p">Five operational pillars plus dish-level intelligence</span></td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td></tr>
-          <tr><td><b data-i="cm2_t">Kuwaiti & Khaleeji lexicon</b><br><span style="font-size:12.5px" data-i="cm2_p">1,541 curated terms, learning nightly</span></td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td></tr>
+          <tr><td><b data-i="cm2_t">Kuwaiti & Khaleeji lexicon</b><br><span style="font-size:12.5px" data-i="cm2_p">A curated lexicon, learning nightly</span></td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td></tr>
           <tr><td><b data-i="cm3_t">Proprietary Kuwait indices</b><br><span style="font-size:12.5px" data-i="cm3_p">The weekly Dining Sentiment Index, from our own collection</span></td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td></tr>
           <tr><td><b data-i="cm4_t">True bilingual parity</b><br><span style="font-size:12.5px" data-i="cm4_p">Arabic ⇄ English across interface, analysis and reports</span></td><td class="yes">✓</td><td class="no">✗</td><td class="yes">✓</td></tr>
           <tr><td><b data-i="cm5_t">SME-simple</b><br><span style="font-size:12.5px" data-i="cm5_p">Decisions and priorities, not dashboards that need an analyst</span></td><td class="yes">✓</td><td class="no">✗</td><td class="no">✗</td></tr>
@@ -872,20 +1165,19 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
 <section class="sec light tight" id="trust" style="padding-top:24px">
   <div class="wrap">
     <div class="shead rv">
-      <span class="eb" data-i="tu_eb">Data & trust</span>
+      <span class="eb" data-i="tu_eb">Data &amp; trust</span>
       <h2 style="font-size:clamp(1.6rem,2.8vw,2.2rem)" data-i="tu_h">The honesty rules, in one place</h2>
     </div>
-    <div class="trust stag">
-      <div class="tr"><span class="tick">✓</span><p><b data-i="tu1_b">Public data only.</b> <span data-i="tu1_p">Ripple never accesses private accounts or private messages.</span></p></div>
-      <div class="tr"><span class="tick">✓</span><p><b data-i="tu2_b">Nothing auto-posts.</b> <span data-i="tu2_p">AI replies are always drafts; a person on your team reviews and sends every one.</span></p></div>
-      <div class="tr"><span class="tick">✓</span><p><b data-i="tu3_b">Honest freshness.</b> <span data-i="tu3_p">Every panel is stamped with when its data last updated — never hidden.</span></p></div>
-      <div class="tr"><span class="tick">✓</span><p><b data-i="tu4_b">Anonymised market data.</b> <span data-i="tu4_p">Market intelligence is aggregate-only; no competitor brand or branch is ever named.</span></p></div>
-      <div class="tr"><span class="tick">✓</span><p><b data-i="tu5_b">Forecasts, clearly marked.</b> <span data-i="tu5_p">Predictions are drawn separately, carry confidence, and stop at 14 days.</span></p></div>
-      <div class="tr"><span class="tick">✓</span><p><b data-i="tu6_b">Watermarked exports.</b> <span data-i="tu6_p">Every PDF carries your client name, a timestamp and a bilingual confidential mark.</span></p></div>
+    <div class="tled stag">
+      <div class="titem"><span class="tick">✓</span><p><b data-i="tu1_b">Public data only.</b> <span data-i="tu1_p">Ripple never accesses private accounts or private messages.</span></p></div>
+      <div class="titem"><span class="tick">✓</span><p><b data-i="tu2_b">Nothing auto-posts.</b> <span data-i="tu2_p">AI replies are always drafts; a person on your team reviews and sends every one.</span></p></div>
+      <div class="titem"><span class="tick">✓</span><p><b data-i="tu3_b">Honest freshness.</b> <span data-i="tu3_p">Every panel is stamped with when its data last updated — never hidden.</span></p></div>
+      <div class="titem"><span class="tick">✓</span><p><b data-i="tu4_b">Anonymised market data.</b> <span data-i="tu4_p">Market intelligence is aggregate-only; no competitor brand or branch is ever named.</span></p></div>
+      <div class="titem"><span class="tick">✓</span><p><b data-i="tu5_b">Forecasts, clearly marked.</b> <span data-i="tu5_p">Predictions are drawn separately, carry confidence, and stop at 14 days.</span></p></div>
+      <div class="titem"><span class="tick">✓</span><p><b data-i="tu6_b">Watermarked exports.</b> <span data-i="tu6_p">Every PDF carries your client name, a timestamp and a bilingual confidential mark.</span></p></div>
     </div>
   </div>
 </section>
-
 <!-- ============ faq ============ -->
 <section class="sec light" id="faq" style="padding-top:48px">
   <div class="wrap">
@@ -894,7 +1186,7 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
       <h2 data-i="fq_h">Questions & answers</h2>
     </div>
     <div class="faq stag">
-      <div class="qa"><button aria-expanded="false"><span data-i="fq1_q">What makes Ripple different from global listening tools?</span><span class="pm">+</span></button><div class="ans"><p data-i="fq1_a">Global tools treat Arabic broadly and Gulf dialect as an afterthought. Ripple is built the other way: a curated Kuwaiti & Khaleeji lexicon of 1,541 terms, five F&B scoring pillars, dish-level tracking, and proprietary Kuwait indices computed from local data no global platform collects.</p></div></div>
+      <div class="qa"><button aria-expanded="false"><span data-i="fq1_q">What makes Ripple different from global listening tools?</span><span class="pm">+</span></button><div class="ans"><p data-i="fq1_a">Global tools treat Arabic broadly and Gulf dialect as an afterthought. Ripple is built the other way: a curated Kuwaiti & Khaleeji lexicon that grows every night, five F&B scoring pillars, dish-level tracking, and proprietary Kuwait indices computed from local data no global platform collects.</p></div></div>
       <div class="qa"><button aria-expanded="false"><span data-i="fq2_q">Can Ripple really read Arabizi and dialect?</span><span class="pm">+</span></button><div class="ans"><p data-i="fq2_a">Yes. “el akel wayed 7elo” is normalised to الأكل وايد حلو and scored the way a Kuwaiti reads it — polarity, sarcasm patterns and amplifiers included. New Gulf terms are mined nightly from real captions and approved by a human before use.</p></div></div>
       <div class="qa"><button aria-expanded="false"><span data-i="fq3_q">Does Ripple post to my social accounts?</span><span class="pm">+</span></button><div class="ans"><p data-i="fq3_a">No. Ripple is not a posting or scheduling tool, and it never sends anything to a customer by itself. AI-drafted replies are always drafts; a person on your team reviews and sends every one.</p></div></div>
       <div class="qa"><button aria-expanded="false"><span data-i="fq4_q">How fresh is the data?</span><span class="pm">+</span></button><div class="ans"><p data-i="fq4_a">Ripple refreshes on an honest, stated rhythm — crisis scanning every 5 minutes, reply drafting every 15, daily visual analysis, and weekly market collection — with every panel stamped so you always know how current it is. It is deliberately not second-by-second “real time”.</p></div></div>
@@ -904,17 +1196,32 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
   </div>
 </section>
 
-<!-- ============ cta ============ -->
-<section class="ctaband" id="contact">
+<!-- ============ contact ============ -->
+<section class="sec dark" id="contact" style="position:relative;overflow:hidden;background:radial-gradient(900px 500px at 50% 0%,#12304a 0%,var(--ink) 60%)">
   <div class="rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-  <div class="wrap in">
-    <h2 class="rv" data-i="ct_h">Hear your market. All of it.</h2>
-    <p class="rv" data-i="ct_p">Ripple is onboarding a limited number of Kuwait F&B brands into the pilot programme. Bilingual reports, dialect-native analysis and the Weekly Radar — from day one.</p>
-    <div class="ctas rv">
-      <a class="btn btn-t" href="mailto:hello@ripple.kw" data-i="ct_c1">Join the pilot</a>
-      <a class="btn btn-o" href="mailto:hello@ripple.kw?subject=Ripple%20demo" data-i="ct_c2">Book a demo</a>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="shead rv" style="text-align:center;margin-inline:auto">
+      <span class="eb gold" data-i="co_eb">Contact us</span>
+      <h2 data-i-html="ct_h" style="color:#fff">Hear your market. <span class="gtx">All of it.</span></h2>
+      <p class="lead" data-i="ct_p" style="margin-inline:auto">Ripple works with a select set of Kuwait F&amp;B brands. Tell us about yours — bilingual reports, dialect-native analysis and the Radar, from day one.</p>
     </div>
-    <p class="mail rv">hello@ripple.kw · @rippleintelligence</p>
+    <div class="cwrap">
+      <div class="cchan stag">
+        <a class="cc" href="mailto:hello@ripple.kw"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mail"/></svg></div><div><b data-i="co_l1">Email us</b><span>hello@ripple.kw</span></div></a>
+        <a class="cc" href="https://instagram.com/rippleintelligence" target="_blank" rel="noopener"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-ig"/></svg></div><div><b data-i="co_l2">Follow along</b><span>@rippleintelligence</span></div></a>
+        <div class="cc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg></div><div><b data-i="co_l3">Based in</b><span data-i="co_l3v">Kuwait City, Kuwait</span></div></div>
+      </div>
+      <form class="cform rv" id="cform">
+        <label for="cf-name" data-i="co_f1">Your name</label>
+        <input id="cf-name" type="text" autocomplete="name">
+        <label for="cf-brand" data-i="co_f2">Brand or business</label>
+        <input id="cf-brand" type="text" autocomplete="organization">
+        <label for="cf-msg" data-i="co_f3">Message</label>
+        <textarea id="cf-msg"></textarea>
+        <button type="submit" class="btn btn-t" data-i="co_send">Send message</button>
+        <p class="fnote" data-i="co_note">Opens your mail app — nothing is sent without you.</p>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -922,10 +1229,26 @@ html[lang=ar] .quoteband .mark{transform:scaleX(-1)}
   <div class="wrap in">
     <img src="assets/logo-white.png" alt="Ripple Intelligence">
     <span data-i="ft_tag">Listen Beyond Language. · Social intelligence for the Gulf</span>
+    <div class="legalinks">
+      <button type="button" onclick="openLegal('pp')" data-i="fl_p">Privacy Policy</button>
+      <button type="button" onclick="openLegal('ts')" data-i="fl_t">Terms of Service</button>
+    </div>
     <span class="soc">© 2026 Ripple Intelligence · Kuwait</span>
   </div>
 </footer>
 
+<div class="legal" id="legal-pp" role="dialog" aria-modal="true" aria-labelledby="pp-title">
+  <div class="lpanel">
+    <div class="lhead"><h3 id="pp-title" data-i="pp_h">Privacy Policy</h3><span class="ldate" data-i="ld">Last updated · July 2026</span><button class="lx" onclick="closeLegal()" aria-label="Close">✕</button></div>
+    <div class="lbody" data-i-html="pp_b"><h4>Who we are</h4><p>Ripple Intelligence (“Ripple”, “we”) is an AI restaurant-intelligence platform for the food &amp; beverage sector in Kuwait and the GCC. This policy covers both this website and, at a high level, how the Ripple platform treats data. Questions: hello@ripple.kw.</p><h4>What this website collects</h4><p>This site has no accounts, no advertising trackers and no analytics cookies. It stores one thing in your browser: your language preference (English or Arabic), kept locally on your device and sent to no one. If you contact us, the message travels through your own email app — we receive only what you choose to send.</p><h4>What the Ripple platform collects</h4><p>The platform reads publicly available information only: public social posts, comments and captions, public customer reviews, public creator content, and industry news and podcasts. It never accesses private accounts, private messages or anything behind a login. Client workspace data lives in an isolated tenant, visible only to that client’s team.</p><h4>How market intelligence stays anonymous</h4><p>Market-level insights are published as cuisine- and area-level aggregates. No competitor brand or branch is ever named in shared market intelligence, and no individual reviewer is profiled.</p><h4>Retention</h4><p>Raw collected social data is kept on a limited horizon — long enough to serve the reporting windows that use it — while derived aggregates are kept longer as the historical record, and operational logs are kept for a shorter debugging window. Exported reports carry a watermark with the client name and timestamp.</p><h4>Sharing</h4><p>We do not sell data. We use service providers (hosting, AI analysis, email delivery) strictly to operate the platform, under their own confidentiality obligations.</p><h4>Your choices</h4><p>For questions about the information we hold, or to ask about access or removal, write to hello@ripple.kw. This policy is governed by the laws of the State of Kuwait.</p></div>
+  </div>
+</div>
+<div class="legal" id="legal-ts" role="dialog" aria-modal="true" aria-labelledby="ts-title">
+  <div class="lpanel">
+    <div class="lhead"><h3 id="ts-title" data-i="ts_h">Terms of Service</h3><span class="ldate" data-i="ld2">Last updated · July 2026</span><button class="lx" onclick="closeLegal()" aria-label="Close">✕</button></div>
+    <div class="lbody" data-i-html="ts_b"><h4>Acceptance</h4><p>By using this website you accept these terms. If you do not accept them, please do not use the site.</p><h4>The service</h4><p>This website presents Ripple Intelligence, a social-listening and market-intelligence platform for F&amp;B businesses. Use of the platform itself is governed by the client agreement signed with each customer; nothing on this site constitutes an offer, a guarantee of results, or professional advice.</p><h4>Use of the site</h4><p>You agree to use the site lawfully, and not to scrape it, probe it, disrupt it, or misrepresent your affiliation with Ripple.</p><h4>Intellectual property</h4><p>The Ripple name, ripple mark, site design and content are the property of Ripple Intelligence. Third-party names and marks referenced on this site belong to their owners. Illustrative screens, scores and figures shown here are concept views, not live client data.</p><h4>Information, not advice</h4><p>Ripple’s indices, scores and reports are informational tools built from public data. Business decisions made using them remain yours; Ripple does not provide financial, legal or professional advice.</p><h4>No warranties &amp; liability</h4><p>The site is provided “as is”, without warranties of any kind. To the fullest extent permitted by law, Ripple is not liable for indirect or consequential losses arising from use of this site.</p><h4>Changes</h4><p>We may update these terms and this site at any time; the “last updated” date above reflects the current version.</p><h4>Governing law &amp; contact</h4><p>These terms are governed by the laws of the State of Kuwait. Contact: hello@ripple.kw.</p></div>
+  </div>
+</div>
 <script>
 /* ================= i18n ================= */
 const AR = {
@@ -933,41 +1256,50 @@ nav_platform:"المنصة", nav_dialect:"محرك اللهجات", nav_market:"
 hero_eb:"ذكاء المطاعم بالذكاء الاصطناعي · الكويت والخليج",
 hero_h1:'اسمع ما <span class="tl">وراء اللغة.</span>',
 hero_sub:"ريبل يقرأ كل ما يقوله السوق عن الطعام — بالعربية الكويتية والإنجليزية — ويحوّله إلى قرارات: ماذا حدث، وما المهم، وما الذي يجب فعله.",
-hero_cta1:"انضم للبرنامج التجريبي", hero_cta2:"استكشف المنصة",
-st1:"مصطلح باللهجة الكويتية", st2:"صانع محتوى غذائي نتابعه", st3:"فرع نقرؤه أسبوعياً", st4:"محاور تقييم للمطاعم",
+hero_cta1:"احجز عرضاً", hero_cta2:"استكشف المنصة",
+sc1_b:"معجم كويتي وخليجي حيّ", sc1_s:"يُنسَّق كل ليلة، باعتماد بشري",
+sc2_b:"قادة مجتمع الطعام، تحت المتابعة", sc2_s:"كل ذكرٍ يُطابَق ويُقيَّم",
+sc3_b:"تقييمات من كل الكويت، أسبوعياً", sc3_s:"تُنسَب إلى الفرع بعينه",
+sc4_b:"خمسة محاور بعين المشغّل", sc4_s:"الأكل · الخدمة · السرعة · الأجواء · القيمة",
 dec_title:"محرك اللهجات من ريبل · قراءة حيّة", dec_norm_l:"تُقرأ كعربية مكتوبة",
 dec_foot:"عبارات حقيقية تُقرأ كما يقرؤها ابن البلد — بسخريتها وعربيزيها وإيموجيها.",
-pr_eb:"المشكلة", pr_h:"الأدوات العالمية لم تُصنع لتسمع الخليج",
+pr_eb:"المشكلة", pr_h:'الأدوات العالمية لم تُصنع <span class="gtx">لتسمع الخليج</span>',
 pr_lead:"عملاؤك يقولون لك كل شيء أصلاً — باللهجة الكويتية، بالعربيزي، بالإيموجي، وفي التقييمات. معظم المنصات ببساطة لا تستطيع قراءتها، فيضيع أثمن ما في سوقك من ملاحظات دون أن يسمعها أحد.",
+gp_c1:"ما تراه الأدوات العامة", gp_c2:"الكلمات نفسها، كما يقرؤها ريبل",
+gp_m1:"غير مفهومة", gp_m2:"سُوِّيت فصحى",
+gp_p1:"إيجابي", gp_p2:"جودة الأكل", gp_p3:"كويتي", gp_p4:"مديح قوي", gp_p5:"لهجة كويتية",
 pr1_t:"العربية فكرة لاحقة", pr1_p:"اللهجة الكويتية والخليجية تُصنَّف كعربية فصحى، والكتابة من اليمين لليسار مجرد خيار لا أساس — فيضيع المعنى والسخرية والعامية.",
 pr2_t:"لوحات بيانات، لا قرارات", pr2_p:"الأدوات العالمية تفترض محللاً متفرغاً يقرأ الرسوم. معظم فرق المطاعم لا تملك واحداً — ولا ينبغي أن تحتاجه لتعرف ما يجب إصلاحه.",
 pr3_t:"معايير من أسواق أخرى", pr3_p:"مقاييس تفاعل مأخوذة من أسواق لا تشبه الكويت تجعل الأداء الجيد يبدو سيئاً — والمشكلات الحقيقية تبدو طبيعية.",
-fr_eb:"المنصة", fr_h:"منصة واحدة، من الإشارة إلى القرار",
+fr_eb:"المنصة", fr_h:'منصة واحدة، من الإشارة إلى <span class="gtx">القرار</span>',
 fr_lead:"كل شيء في ريبل ينتمي لإحدى أربع طبقات. افتحه صباحاً واعرف ما عليك فعله في أقل من عشر ثوانٍ.",
 fr1_t:"جمع", fr1_p:"إنستغرام وتيك توك وإكس وتقييمات غوغل وصنّاع المحتوى والأخبار والبودكاست — كل إشارة عامة ذات صلة، باستمرار.",
 fr2_t:"فهم", fr2_p:"تحليل ذكاء اصطناعي باللهجة والسياق — المشاعر والانفعالات وخمسة محاور للمطاعم والأطباق والمرئيات.",
 fr3_t:"قرار", fr3_p:"مؤشرات ومعايير وتنبيهات وأولويات مرتّبة. حُكمٌ ناضج، لا مجرد رسوم بيانية.",
-fr4_t:"تنفيذ", fr4_p:"بطاقات إجراء ومسودات ردود وتقارير والرادار الأسبوعي — تصلك جاهزة وبلغتين.",
+fr4_t:"تنفيذ", fr4_p:"بطاقات إجراء ومسودات ردود وتقارير والرادار — تصلك جاهزة وبلغتين.",
 sv1_t:"علامتك التجارية", sv1_p:"كل ما يخصك أنت: منشوراتك وذكرك وتقييماتك ومنافسوك — بلون التيل في كل أنحاء المنتج.",
 sv1_l1:"أداء العلامة والرصد والمتابعة", sv1_l2:"تقييمات العملاء منسوبة إلى الفرع الصحيح", sv1_l3:"ذكاء المنافسين والحملات",
 sv2_t:"سوقك", sv2_p:"السوق كله: كيف تشعر الكويت تجاه الأكل خارج المنزل هذا الأسبوع، أي الأطباق تصعد، وأي المطابخ والمناطق أقوى — مجهّلاً دائماً.",
-sv2_l1:"الرادار الأسبوعي ومؤشر مزاج المطاعم في الكويت", sv2_l2:"اتجاهات الأطباق والمطابخ والمناطق والفرص الشاغرة", sv2_l3:"إشارة صنّاع المحتوى ومؤشر التوصيل (قريباً)",
-li_eb:"الرصد الاجتماعي · 01", li_h:"ذكاء اجتماعي بعقلٍ يفهم المطاعم",
+sv2_l1:"الرادار ومؤشر مزاج المطاعم في الكويت", sv2_l2:"اتجاهات الأطباق والمطابخ والمناطق والفرص الشاغرة", sv2_l3:"إشارة صنّاع المحتوى ومؤشر التوصيل (قريباً)",
+li_eb:"الرصد الاجتماعي · 01", li_h:'ذكاء اجتماعي بعقلٍ <span class="gtx">يفهم المطاعم</span>',
 li_lead:"كل منشور وتعليق وتقييم — يُقرأ كما يقرؤه ابن البلد، ويُقيَّم كما يقيّمه مشغّل مطاعم.",
 so1:"منشورات وتعليقات وإشارات", so2:"فيديوهات وسلاسل تعليقات", so3:"إشارات ومحادثات", so4:"تقييمات منسوبة للفرع الصحيح",
-li_sub:"ماذا تنال كل إشارة",
-sg1_t:"المشاعر والانفعال", sg1_p:"من الإيجابي إلى السلبي — والشعور خلفه، حتى السخرية.",
-sg2_t:"نيّة الزيارة", sg2_p:"ولاء · مناصرة · تجنّب — الإشارة التي تسبق تكرار الزيارة.",
-sg3_t:"ذكر الأطباق والمنيو", sg3_p:"كل صنف يُتتبَّع عبر الإنجليزية والعربية وهجاءات اللهجة.",
-sg4_t:"ذكر المنافسين والموظفين", sg4_p:"مَن يُذكر غيرك، وأي فرع أو شخص يخصه الأمر.",
-sg5_t:"بصمة اللهجة", sg5_p:"كويتي أو خليجي أو فصحى أو إنجليزي — ويُحلَّل وفق ذلك.",
-sg6_t:"تحليل الصور والفيديو", sg6_p:"التكوين والنص العربي داخل الصورة ودعوات التفاعل — تدريب إبداعي لكل منشور.",
+li_sub:"ماذا تنال كل إشارة — منشور واحد، مقروء بالكامل",
+pc_n:"محب أكل كويتي", pc_s:"هذا الصباح", pc_m:"التقاط جغرافي · السالمية · لم يُشِر إلى العلامة",
+rd1_t:"المشاعر والانفعال", rd1_s:"مديح تشوبه حافة إحباط — مع فحص السخرية", rd1_v:"مختلط",
+rd2_t:"جودة الأكل", rd2_s:"«الأكل وايد حلو»", rd2_v:"إيجابي",
+rd3_t:"السرعة", rd3_s:"«التوصيل تأخر»", rd3_v:"سلبي",
+rd4_t:"الخدمة", rd4_s:"«قمة بالذوق»", rd4_v:"إيجابي",
+rd5_t:"بصمة اللهجة", rd5_s:"«وايد» · «بس» — تُقرأ بلسانها لا بترجمتها", rd5_v:"كويتي",
+rd6_t:"إسناد الفرع", rd6_s:"التُقط جغرافياً — والمطبخ المعني هو المُنبَّه", rd6_v:"السالمية",
+rd_also:"وعلى كل إشارة أيضاً: ذكر الأطباق والمنيو بكل الهجاءات، وذكر المنافسين والموظفين، ونيّة الزيارة، وتدريب إبداعي على الصور والفيديو.",
 geo_b:"الالتقاط الجغرافي:", geo_p:"الضيوف الذين ينشرون من موقعك يُلتقطون حتى لو لم يشيروا إليك أبداً.",
-pi_eb:"ذكاء المطاعم · 02", pi_h:"خمسة محاور يعرفها كل مشغّل",
+pi_eb:"ذكاء المطاعم · 02", pi_h:'خمسة محاور <span class="gtx">يعرفها كل مشغّل</span>',
 pi_lead:"كل ذكرٍ وتقييم يُقيَّم من −1 إلى +1 على الروافع التي تديرها فعلاً — ويُنسَب إلى الفرع المنفِّذ. شكوى البطء تقع على المطبخ الصحيح، لا على متوسط العلامة.",
 pl1:"جودة الأكل", pl2:"الخدمة", pl3:"السرعة", pl4:"الأجواء", pl5:"القيمة",
 pi_note:"درجات توضيحية. «المشاعر انخفضت» تخبرك أن خللاً ما وقع. «السرعة انخفضت وجودة الأكل ثابتة» تخبرك ماذا تصلح.",
-me_eb:"ذكاء المنيو · 03", me_h:"منيوك، متتبَّع طبقاً طبقاً",
+pi_tick:"العلامة الذهبية تشير إلى متوسط شريحة مطبخك — قِس نفسك على سوقك أنت، لا على معايير أجنبية.",
+me_eb:"ذكاء المنيو · 03", me_h:'منيوك، متتبَّع <span class="gtx">طبقاً طبقاً</span>',
 me_lead:"من «الناس تتكلم» إلى «هذا الطبق، هذا الشعور، هذا الإجراء.» يعاير نفسه على متوسطات منيوك أنت — لا على معايير أجنبية.",
 me_ax_y:"المشاعر ↑", me_ax_x:"حجم الحديث ←",
 q1_t:"جواهر مخفية", q1_p:"محبوبة لكن غير مرئية — سوّقها أكثر",
@@ -979,21 +1311,25 @@ m2_t:"مطابقة بطبقتين", m2_p:"الذكاء الاصطناعي يقر
 m3_t:"مرادفات يقترحها الذكاء الاصطناعي", m3_p:"هجاءات ومرادفات لهجة تُولَّد عند الانضمام — وتعتمدها أنت قبل تفعيلها.",
 m4_t:"حراك المنيو أسبوعياً", m4_p:"أطباق الأسبوع الصاعدة والهابطة، بمشاعر الذكر الحقيقية.",
 m5_t:"أداء المناسبات", m5_p:"أصناف رمضان والعيد الوطني تُقاس على خط أساسها هي: ارتفع، ثبت، أو تراجع.",
-op_eb:"التشغيل · 04", op_h:"من الإشارة إلى الإجراء، على إيقاع الساعة", op_lead:"ذكاء يصلك مرتَّباً وموقوتاً وجاهزاً للتنفيذ.",
+op_eb:"التشغيل · 04", op_h:'من الإشارة إلى الإجراء، على <span class="gtx">إيقاع الساعة</span>', op_lead:"ذكاء يصلك مرتَّباً وموقوتاً وجاهزاً للتنفيذ.",
 op1_f:"كل 5 دقائق", op1_t:"رادار الأزمات", op1_p:"مفردات سلامة الغذاء والخدمة الحادة تُمسح على مدار الساعة، باللهجة. الإصابات الحرجة تنبّه فريقك فوراً.",
 op2_f:"كل 15 دقيقة", op2_t:"مسودات الردود", op2_p:"التعليقات السلبية والأسئلة تُجهَّز بمسودات بصوت علامتك. أنت توافق — لا شيء يُنشر تلقائياً.",
 op3_f:"أسبوعياً", op3_t:"أولويات «أصلِح أولاً»", op3_p:"كل مشكلة مفتوحة تُرتَّب بدرجة أثر واحدة — الشدة × الحجم × الاتجاه. أعلى ثلاث تتصدر كل تقرير أسبوعي.",
 op4_f:"أسبوعياً", op4_t:"إشارة نيّة الزيارة", op4_p:"ولاء · مناصرة · تجنّب — نسبة الاحتفاظ خلف تكرار الزيارة، تُتتبَّع أسبوعياً.",
 op5_f:"متعدد الفروع", op5_t:"ترتيب الفروع", op5_p:"ترتيب المحاور لكل فرع. أي فرع ينزلق تحت متوسط العلامة يُرفَع عنه تنبيه، ومعه الدليل.",
-de_eb:"ذكاء اللهجة · 05", de_h:"محرك اللهجات من ريبل™", de_lead:"العربية الكويتية والخليجية هي الأساس — لا خطوة توطين لاحقة.",
-de_num_l:"مصطلح كويتي وخليجي منسّق — يتعلم كل ليلة",
-de_num_p:"مصطلحات خليجية جديدة تُستخرج كل ليلة من تعليقات حقيقية ويعتمدها إنسان قبل استخدامها. تُسمَع بدقة: المديح والشكوى بكلمات العميل نفسه — لا كما يظنها نموذج مدرَّب على الفصحى.",
+de_eb:"ذكاء اللهجة · 05", de_h:'محرك <span class="gtx">اللهجات</span> من ريبل™', de_lead:"العربية الكويتية والخليجية هي الأساس — لا خطوة توطين لاحقة.",
+lx_t:"معجم ريبل للهجات · حيّ",
+de_num_l:"معجم حيّ — ينمو كل ليلة، باعتماد بشري",
+de_num_p:"تُسمَع بدقة: المديح والشكوى بكلمات العميل نفسه — لا كما يظنها نموذج مدرَّب على الفصحى. مصطلحات خليجية جديدة تُستخرج كل ليلة من تعليقات حقيقية ويعتمدها إنسان قبل استخدامها.",
 de1_t:"عربيزي مُقوَّم", de1_p:"«7elo» و«wayed» تُقرآن كالعربية التي هما — والأطباق تُطابَق عبر الهجاءات والعامية.",
 de2_t:"إشارات التعاون المدفوع", de2_p:"تُرصد بالعربية والإنجليزية — بالتعاون · إعلان · ممول · ‎#ad.",
-de3_t:"تقويم يعي الهجري", de3_p:"أكثر من 36 مناسبة خليجية — من رمضان إلى العيد الوطني — داخل كل تحليل.",
+de3_t:"تقويم يعي الهجري", de3_p:"تقويم الخليج الكامل للمناسبات — من رمضان إلى العيد الوطني — داخل كل تحليل.",
 de4_t:"صُمّم ليسافر", de4_p:"سياق اللهجة يُضبط لكل سوق — الكويت اليوم، والخليج الأوسع تالياً.",
-cr_eb:"ذكاء صنّاع المحتوى · 06", cr_h:"ذكاء المؤثرين — صنّاع المحتوى بلا غموض",
-cr_lead:"115 صانع محتوى غذائي كويتي نتتبعهم. كل ذكرٍ يُطابَق ويُقيَّم ويُسجَّل بالوصول والمشاعر — ويُفحص قبل أن تدفع.",
+cr_eb:"ذكاء صنّاع المحتوى · 06", cr_h:'ذكاء المؤثرين — صنّاع المحتوى <span class="gtx">بلا غموض</span>',
+cr_lead:"قادة مجتمع الطعام في الكويت، تحت المتابعة. كل ذكرٍ يُطابَق ويُقيَّم ويُسجَّل بالوصول والمشاعر — ويُفحص قبل أن تدفع.",
+kc_n:"صانع محتوى غذائي كويتي", kc_dv:"مرتفعة", kc_d:"نسبة محتوى الطعام",
+kc_b1:"الحصة العضوية", kc_b1v:"قوية", kc_b2:"القيمة الإعلامية المكتسبة", kc_b2v:"مرتفعة",
+kc_v:"احجز بثقة — الوصول وملاءمة المحتوى وتفاعل الجمهور، مفحوصة.",
 cr1_t:"عضوي أم مدفوع", cr1_p:"الشراكات تُكتشف من إشارات عربية وإنجليزية — بالتعاون · إعلان · ‎#ad.",
 cr2_t:"القيمة الإعلامية المكتسبة", cr2_p:"كم تساوي تغطية صانع المحتوى لعلامتك فعلاً، بالدينار الكويتي.",
 cr3_t:"حصة التأثير", cr3_p:"نصيبك من انتباه صنّاع المحتوى مقابل منافسيك.",
@@ -1002,7 +1338,7 @@ cr5_t:"مدرب النضارة", cr5_p:"الوجوه المستهلَكة تُع
 cr6_t:"العلامات الصاعدة", cr6_p:"الأسماء التي يدفعها صنّاع محتوى الكويت هذا الأسبوع.",
 cr_q:"صنّاع المحتوى يُظهرون الضجة. العملاء يُظهرون الجودة.",
 cr_qp:"ريبل لا يخلط الاثنين أبداً — منشورات المؤثرين تبقى خارج درجاتك التشغيلية، والفجوة بين الضجة والجودة هي البصيرة نفسها: المبالَغ فيه، والجواهر المخفية.",
-mk_eb:"ذكاء السوق · 07", mk_h:"الرادار الأسبوعي — سوقك في أربعة مسارات",
+mk_eb:"ذكاء السوق · 07", mk_h:'الرادار — سوقك في <span class="gtx">أربعة مسارات</span>',
 mk_lead:"لوحتك تخبرك بما يحدث لعلامتك. الرادار يخبرك بما يحدث لسوقك — يُحلَّل مرة واحدة ويُشارك مع كل مشترك، ولا تُسمّى أي علامة أبداً.",
 mk_l1:"الأخبار", mk_l2:"الصوتيات", mk_l3:"صنّاع المحتوى", mk_l4:"التقييمات",
 ln1_t:"الأخبار", ln1_p:"صحافة المطاعم العالمية والإقليمية، مقطَّرة إلى ما يهم — صفقات وصيغ واتجاهات ومخاطر — ومع كلٍّ قراءة «هل يصل سوقك؟».",
@@ -1010,7 +1346,11 @@ ln2_t:"الصوتيات", ln2_p:"بودكاست المطاعم يُنقَّب أ
 ln3_t:"إشارة صنّاع المحتوى", ln3_p:"ما يقدّمه صنّاع محتوى الكويت هذا الأسبوع — مطابخ وأطباق وافتتاحات وتحركات.",
 ln4_t:"تقييمات العملاء", ln4_p:"مؤشر الكويت الأسبوعي للمطاعم، مبني من تقييمات عملاء حقيقية — مجهّلة وعلى مستوى المطبخ والمنطقة.",
 mk2_h:"تقييمات عملاء الكويت، كل أسبوع",
-mk2_lead:"تقييمات غوغل العامة من 1,500 من أكثر فروع الكويت تقييماً، تُجمع كل يوم أحد وتُحلَّل بالعلامة والمطبخ والمنطقة على المحاور الخمسة نفسها.",
+mk2_lead:"تقييمات غوغل العامة من أكثر فروع الكويت تقييماً، تُجمع كل أسبوع وتُحلَّل بالعلامة والمطبخ والمنطقة على المحاور الخمسة نفسها.",
+ip_t:"مؤشر مزاج المطاعم في الكويت", ip_w:"في تحسّن", ip_g:"صحّي", ip_gs:"قراءة السوق هذا الأسبوع",
+ip_m1:"أنت مقابل السوق — المحاور", ip_m2:"افتتاحات وإغلاقات",
+ip_o:"أماكن جديدة تُرصد أسبوعياً", ip_c:"إغلاقات مؤكدة، بالمنطقة",
+ip_n:"عرض توضيحي — يُحسب المؤشر الحي أسبوعياً من تقييمات عملاء حقيقية.",
 mi1_t:"مؤشر مزاج المطاعم", mi1_p:"المزاج الوطني للأكل خارج المنزل، متتبَّعاً أسبوعاً بأسبوع.",
 mi2_t:"أنت مقابل السوق", mi2_p:"محاورك مقابل شريحة مطبخك والخط الوطني — مع ترتيبك.",
 mi3_t:"افتتاحات وإغلاقات", mi3_p:"أماكن جديدة على الخريطة وإغلاقات مؤكدة، بالمنطقة والمطبخ.",
@@ -1018,31 +1358,37 @@ mi4_t:"الفرص الشاغرة", mi4_p:"توليفات مطبخ × منطقة 
 mi5_t:"دورة حياة الطبق", mi5_p:"الأطباق الرائجة على مراحل: ناشئ ← متسارع ← في الذروة ← خافت.",
 mi6_t:"صوت العميل", mi6_p:"نمط متكرر مجهّل واحد كل أسبوع — ومعه الإصلاح التشغيلي الذي يقتضيه.",
 an_b:"مجهّل بالتصميم.", an_p:"لا تُعرض إلا تجميعات على مستوى المطبخ والمنطقة — لا يُسمّى أي منافس أبداً. وفي البرنامج أيضاً: إحاطة الكويت الفصلية، و", an_soon:"قريباً",
-ex_eb:"التجربة · 08", ex_h:"صُمّم للملّاك، لا للمحللين", ex_lead:"كثافة هادئة: غني بالمعلومات دون إرهاق — بالعربية والإنجليزية سواء.",
-ex1_t:"ثلاث نقرات كحد أقصى", ex1_p:"سبع عشرة شاشة في هيكل واحد — لا مهمة أعمق من ثلاث نقرات. لا دليل ولا محلل.",
-ex2_t:"عربي ⇄ إنجليزي بلمسة", ex2_p:"واجهة معكوسة بالكامل من اليمين لليسار — أكثر من 560 نصاً مترجماً، لا طبقة ترجمة.",
+ex_eb:"التجربة · 08", ex_h:'صُمّم للملّاك، لا <span class="gtx">للمحللين</span>', ex_lead:"كثافة هادئة: غني بالمعلومات دون إرهاق — بالعربية والإنجليزية سواء.",
+ap_v:"«السرعة تراجعت في فرع واحد هذا الأسبوع — الردود مصاغة وبانتظار موافقتك.»",
+ap_k1:"صحة العلامة", ap_k1v:"قوية", ap_k2:"تجربة العملاء", ap_k2v:"مستقرة", ap_k3:"المشاعر", ap_k3v:"صاعدة",
+ap_c:"عرض تصوري للوحة ريبل — سمة داكنة، والحكم أولاً، وخط الشريحة بالذهبي.",
+ex1_t:"ثلاث نقرات كحد أقصى", ex1_p:"كل الشاشات في هيكل واحد — لا مهمة أعمق من ثلاث نقرات. لا دليل ولا محلل.",
+ex2_t:"عربي ⇄ إنجليزي بلمسة", ex2_p:"واجهة معكوسة بالكامل من اليمين لليسار — كل نص مترجم، لا طبقة ترجمة.",
 ex3_t:"سمتان داكنة وفاتحة", ex3_p:"سمة داكنة هادئة راقية افتراضياً؛ والفاتحة على بعد لمسة.",
 ex4_t:"الجواب قبل السؤال", ex4_p:"كل صفحة تفتتح بالحكم. الرسوم تحتها دليل، لا رسالة.",
 ex5_t:"اسأل ريبل", ex5_p:"اسأل بلغة عادية — «ماذا أصلح هذا الأسبوع؟» — وخذ جواباً مدعوماً بالبيانات.",
 ex6_t:"صادق بالتصميم", ex6_p:"بيانات مقيسة فقط، موسومة بوضوح ومختومة بالحداثة. لا شيء مقدَّر أو منفوخ أو مزيَّن.",
-rh_eb:"الإيقاع · 09", rh_h:"ذكاء على جدول تشعر به",
+rh_eb:"الإيقاع · 09", rh_h:'ذكاء على جدول <span class="gtx">تشعر به</span>',
 rh_lead:"يصلك كتقارير مصمَّمة بعناية، ثنائية اللغة وبهوية علامتك — في بريدك وبلغتك. وثائق مصوغة، لا تصديرات خام.",
 rt1_f:"كل 5 دقائق", rt1_t:"مراقبة الأزمات", rt1_p:"عبر التعليقات والإشارات والتقييمات — القضايا الحرجة تنبّه فريقك فوراً.",
-rt2_f:"كل يوم", rt2_t:"تقرير الذكاء البصري", rt2_p:"قراءة إبداعية وتفاعلية لكل منشور من محتوى الأمس.",
-rt3_f:"كل أسبوع", rt3_t:"نبض الأسبوع", rt3_p:"تقرير أدائك يوم الأحد، والرادار الأسبوعي بمساراته الأربعة يوم الاثنين، ومؤشر تقييمات عملاء الكويت.",
+rt2_f:"كل يوم", rt2_t:"القراءة الإبداعية اليومية", rt2_p:"قراءة إبداعية وتفاعلية لكل منشور من محتوى الأمس.",
+rt3_f:"كل أسبوع", rt3_t:"نبض الأسبوع", rt3_p:"مراجعة أدائك يوم الأحد، والرادار بمساراته الأربعة يوم الاثنين، ومؤشر تقييمات عملاء الكويت.",
 rt4_f:"كل شهر", rt4_t:"الخلاصة الاستراتيجية", rt4_p:"الاتجاهات والمعايير والمشهد التنافسي — الشهر بطيفه الكامل.",
 rt5_f:"كل مناسبة", rt5_t:"تقويم الخليج، منسوجاً في التحليل", rt5_p:"رمضان والعيد والعيد الوطني — الأصناف الموسمية تُقاس في موسمها.",
-rp_sub:"عائلة التقارير", rp_c1:"التقرير", rp_c2:"الوتيرة", rp_c3:"ماذا يغطي",
-rp1_t:"الملخص اليومي", rp1_c:"مرتان يومياً", rp1_p:"تحركات اليوم والبنود المفتوحة — التوأم البريدي لإحاطة «اليوم».",
-rp2_t:"التقرير الأسبوعي الموحد", rp2_c:"كل أحد", rp2_p:"أسبوعك كاملاً عبر علامتك: منشورات وتفاعل ومشاعر ومحاور وتقييمات عملاء (~12 صفحة).",
-rp3_t:"الرادار الأسبوعي (السوق)", rp3_c:"كل اثنين", rp3_p:"عدد السوق بمساراته الأربعة — الأخبار والصوتيات وإشارة صنّاع المحتوى وتقييمات العملاء (~8 صفحات).",
-rp4_t:"تقرير المنافسين", rp4_c:"أسبوعياً", rp4_p:"مجموعتك المتتبَّعة وجهاً لوجه، مع الموجز الاستخباري المكتوب (~8 صفحات).",
-rp5_t:"الذكاء الشهري", rp5_c:"أول الشهر", rp5_p:"الشهر بطيفه الكامل: العلامة والمنافسون وموقعك في السوق (~18 صفحة).",
-rp6_t:"نطاق مخصص", rp6_c:"عند الطلب", rp6_p:"أي فترة وأي أقسام — يُولَّد حين تحتاجه. وكل تصدير موسوم مائياً.",
-wh_eb:"لماذا ريبل · 10", wh_h:"العمق يغلب الاتساع في المطاعم", wh_lead:"حيث تتنافس الفئة على الحجم، يتنافس ريبل على فهم سوقك.",
+rp_sub:"عائلة التقارير",
+rf_lead:"اللوحات للأسئلة، والتقارير للإيقاع. كل تقرير من ريبل وثيقة مصاغة بلغتين — مصمَّمة لا مصدَّرة.",
+rf_c1:"أسبوعك، موحَّداً", rf_c1s:"علامتك من أولها إلى آخرها",
+rf_c2:"الرادار", rf_c2s:"سوقك في أربعة مسارات",
+rf_c3:"الشهر، بعمقه", rf_c3s:"اتجاهات ومعايير وموقع",
+rf1_t:"مصاغة لا مصدَّرة", rf1_p:"ملفات PDF مصممة على النظام البصري نفسه للوحة — وثائق تفخر بتمريرها.",
+rf2_t:"الحكم أولاً", rf2_p:"كل تقرير يفتتح بالخلاصة؛ والرسوم تحته هي الدليل.",
+rf3_t:"ثنائية اللغة بالبناء", rf3_p:"العربية والإنجليزية سواء — كل عنوان وكل شرح، بانعكاس صحيح.",
+rf4_t:"من نبض اليوم إلى الصورة الاستراتيجية", rf4_p:"عائلة تغطي يومك وأسبوعك وشهرك ومناسباتك — وأي نطاق مخصص، عند الطلب.",
+rf5_t:"موسومة ومؤرشفة", rf5_p:"كل تصدير يحمل اسمك وختماً زمنياً وعلامة سرّية بلغتين — ويستقر في أرشيفك داخل المنصة.",
+wh_eb:"لماذا ريبل · 10", wh_h:'العمق يغلب <span class="gtx">الاتساع</span> في المطاعم', wh_lead:"حيث تتنافس الفئة على الحجم، يتنافس ريبل على فهم سوقك.",
 cm_c0:"", cm_c2:"منصات المؤسسات العالمية", cm_c3:"حزم إقليمية عربية أولاً",
 cm1_t:"عمق رأسي في المطاعم", cm1_p:"خمسة محاور تشغيلية وذكاء على مستوى الطبق",
-cm2_t:"معجم كويتي وخليجي", cm2_p:"1,541 مصطلحاً منسّقاً يتعلم كل ليلة",
+cm2_t:"معجم كويتي وخليجي", cm2_p:"معجم منسّق، يتعلم كل ليلة",
 cm3_t:"مؤشرات كويتية حصرية", cm3_p:"مؤشر مزاج المطاعم الأسبوعي، من جمعنا الخاص",
 cm4_t:"تكافؤ لغوي حقيقي", cm4_p:"عربي ⇄ إنجليزي عبر الواجهة والتحليل والتقارير",
 cm5_t:"بساطة تناسب المنشآت الصغيرة", cm5_p:"قرارات وأولويات، لا لوحات تحتاج محللاً",
@@ -1056,7 +1402,7 @@ tu5_b:"توقعات موسومة بوضوح.", tu5_p:"التنبؤات تُرس�
 tu6_b:"تصديرات موسومة مائياً.", tu6_p:"كل PDF يحمل اسم عميلك وختماً زمنياً وعلامة سرّية ثنائية اللغة.",
 fq_eb:"الأسئلة الشائعة", fq_h:"أسئلة وأجوبة",
 fq1_q:"ما الذي يميز ريبل عن أدوات الرصد العالمية؟",
-fq1_a:"الأدوات العالمية تعامل العربية بعمومية واللهجة الخليجية كفكرة لاحقة. ريبل مبني بالعكس: معجم كويتي وخليجي منسّق من 1,541 مصطلحاً، وخمسة محاور تقييم للمطاعم، وتتبع على مستوى الطبق، ومؤشرات كويتية حصرية محسوبة من بيانات محلية لا تجمعها أي منصة عالمية.",
+fq1_a:"الأدوات العالمية تعامل العربية بعمومية واللهجة الخليجية كفكرة لاحقة. ريبل مبني بالعكس: معجم كويتي وخليجي منسّق ينمو كل ليلة، وخمسة محاور تقييم للمطاعم، وتتبع على مستوى الطبق، ومؤشرات كويتية حصرية محسوبة من بيانات محلية لا تجمعها أي منصة عالمية.",
 fq2_q:"هل يقرأ ريبل العربيزي واللهجة فعلاً؟",
 fq2_a:"نعم. «el akel wayed 7elo» تُقوَّم إلى «الأكل وايد حلو» وتُقيَّم كما يقرؤها الكويتي — بالقطبية وأنماط السخرية والمكثّفات. والمصطلحات الخليجية الجديدة تُستخرج كل ليلة من تعليقات حقيقية ويعتمدها إنسان قبل استخدامها.",
 fq3_q:"هل ينشر ريبل على حساباتي؟",
@@ -1067,10 +1413,16 @@ fq5_q:"هل بياناتي خاصة؟",
 fq5_a:"مساحة عملك خاصة بك: بياناتك لا يراها إلا فريقك. ريبل يقرأ المعلومات العامة فقط، وذكاء السوق مجهّل على مستوى المطبخ والمنطقة، وكل PDF مصدَّر موسوم بمصدره.",
 fq6_q:"هل أحتاج محللاً لاستخدامه؟",
 fq6_a:"لا. كل شاشة تفتتح بالحكم — إحاطة وأولوية وتوصية — والرسوم تحتها هي الدليل. لا مهمة أعمق من ثلاث نقرات، و«اسأل ريبل» يجيب عن الأسئلة بلغة عادية ومعه البيانات.",
-ct_h:"اسمع سوقك. كله.",
-ct_p:"يستقبل ريبل عدداً محدوداً من علامات المطاعم الكويتية في البرنامج التجريبي. تقارير ثنائية اللغة وتحليل أصيل باللهجة والرادار الأسبوعي — من اليوم الأول.",
-ct_c1:"انضم للبرنامج التجريبي", ct_c2:"احجز عرضاً",
-ft_tag:"اسمع ما وراء اللغة. · ذكاء اجتماعي للخليج"
+co_eb:"تواصل معنا", ct_h:'اسمع سوقك. <span class="gtx">كله.</span>',
+ct_p:"يعمل ريبل مع مجموعة مختارة من علامات المطاعم الكويتية. حدّثنا عن علامتك — تقارير بلغتين وتحليل أصيل باللهجة والرادار، من اليوم الأول.",
+co_l1:"راسلنا", co_l2:"تابعنا", co_l3:"مقرّنا", co_l3v:"مدينة الكويت، الكويت",
+co_f1:"اسمك", co_f2:"العلامة أو النشاط", co_f3:"الرسالة", co_send:"أرسل الرسالة",
+co_note:"يفتح تطبيق البريد لديك — لا يُرسل شيء من دونك.",
+ft_tag:"اسمع ما وراء اللغة. · ذكاء اجتماعي للخليج",
+fl_p:"سياسة الخصوصية", fl_t:"شروط الخدمة",
+pp_h:"سياسة الخصوصية", ld:"آخر تحديث · يوليو 2026", ts_h:"شروط الخدمة", ld2:"آخر تحديث · يوليو 2026",
+pp_b:'<h4>من نحن</h4><p>ريبل إنتليجنس («ريبل»، «نحن») منصة ذكاء مطاعم بالذكاء الاصطناعي لقطاع الأغذية والمشروبات في الكويت والخليج. تغطي هذه السياسة هذا الموقع، وبصورة عامة كيفية تعامل منصة ريبل مع البيانات. للاستفسار: hello@ripple.kw.</p><h4>ماذا يجمع هذا الموقع</h4><p>لا حسابات في هذا الموقع، ولا متتبعات إعلانية، ولا ملفات تعريف تحليلية. يخزّن شيئاً واحداً في متصفحك: تفضيل اللغة (العربية أو الإنجليزية)، ويبقى محلياً على جهازك ولا يُرسَل لأحد. وإذا تواصلت معنا فرسالتك تمر عبر تطبيق بريدك أنت — ولا يصلنا إلا ما اخترت إرساله.</p><h4>ماذا تجمع منصة ريبل</h4><p>تقرأ المنصة المعلومات المتاحة للعموم فقط: المنشورات والتعليقات العامة، وتقييمات العملاء العامة، ومحتوى صنّاع المحتوى العام، وأخبار القطاع والبودكاست. ولا تصل أبداً إلى حسابات خاصة أو رسائل خاصة أو أي شيء خلف تسجيل دخول. وبيانات مساحة كل عميل معزولة في مستأجره، ولا يراها إلا فريقه.</p><h4>كيف يبقى ذكاء السوق مجهّلاً</h4><p>تُنشر رؤى السوق كتجميعات على مستوى المطبخ والمنطقة. لا تُسمّى أي علامة منافسة أو فرع في ذكاء السوق المشترك، ولا يُنشأ ملف لأي مُقيِّم فرد.</p><h4>الاحتفاظ بالبيانات</h4><p>البيانات الاجتماعية الخام تُحفَظ على أفق محدود — بما يكفي لخدمة نوافذ التقارير التي تستخدمها — بينما تُحفَظ المجاميع المشتقة مدة أطول كسجلٍّ تاريخي، وسجلات التشغيل لمدة أقصر لأغراض المعالجة. وكل تقرير مصدَّر يحمل علامة مائية باسم العميل والختم الزمني.</p><h4>المشاركة</h4><p>لا نبيع البيانات. نستخدم مزوّدي خدمات (استضافة، تحليل ذكاء اصطناعي، إرسال بريد) لتشغيل المنصة حصراً، وبالتزامات سرّية خاصة بهم.</p><h4>خياراتك</h4><p>للاستفسار عن المعلومات التي نحتفظ بها، أو لطلبات الاطلاع أو الإزالة، راسلنا على hello@ripple.kw. تخضع هذه السياسة لقوانين دولة الكويت.</p>',
+ts_b:'<h4>القبول</h4><p>باستخدامك هذا الموقع فأنت تقبل هذه الشروط. وإن لم تقبلها فنرجو عدم استخدام الموقع.</p><h4>الخدمة</h4><p>يعرّف هذا الموقع بمنصة ريبل إنتليجنس للرصد الاجتماعي وذكاء السوق لقطاع المطاعم. أما استخدام المنصة نفسها فيحكمه اتفاق العميل الموقَّع مع كل متعامل؛ ولا شيء في هذا الموقع يُعد عرضاً أو ضماناً للنتائج أو استشارة مهنية.</p><h4>استخدام الموقع</h4><p>توافق على استخدام الموقع استخداماً مشروعاً، وعلى عدم كشطه أو اختراقه أو تعطيله أو انتحال صلة بريبل.</p><h4>الملكية الفكرية</h4><p>اسم ريبل وشعاره وتصميم الموقع ومحتواه ملك لريبل إنتليجنس. وأسماء وعلامات الأطراف الأخرى المشار إليها ملك لأصحابها. والشاشات والدرجات والأرقام التوضيحية المعروضة هنا عروض تصورية، لا بيانات عملاء حية.</p><h4>معلومات لا استشارة</h4><p>مؤشرات ريبل ودرجاته وتقاريره أدوات معلوماتية مبنية على بيانات عامة. وتبقى القرارات التجارية المتخذة بالاستناد إليها قراراتك؛ ولا يقدّم ريبل استشارة مالية أو قانونية أو مهنية.</p><h4>لا ضمانات، وحدود المسؤولية</h4><p>يُقدَّم الموقع «كما هو» دون ضمانات من أي نوع. وإلى أقصى حد يجيزه القانون، لا يتحمل ريبل مسؤولية الخسائر غير المباشرة أو التبعية الناشئة عن استخدام هذا الموقع.</p><h4>التعديلات</h4><p>قد نحدّث هذه الشروط وهذا الموقع في أي وقت؛ ويعكس تاريخ «آخر تحديث» أعلاه النسخة الحالية.</p><h4>القانون الواجب التطبيق والتواصل</h4><p>تخضع هذه الشروط لقوانين دولة الكويت. للتواصل: hello@ripple.kw.</p>'
 };
 
 /* snapshot EN from the DOM, then i18n applies either language */
@@ -1124,30 +1476,11 @@ const io = new IntersectionObserver(es=>{
     if(e.target.id === 'pillarbox'){
       e.target.querySelectorAll('.fill').forEach(f=> f.style.width = f.dataset.w + '%');
     }
-    e.target.querySelectorAll('[data-count]').forEach(countUp);
     io.unobserve(e.target);
   });
 },{threshold:.18});
 document.querySelectorAll('.rv,.stag,.frame,#pillarbox').forEach(el=>io.observe(el));
 
-/* hero counters fire on load */
-window.addEventListener('load', ()=> document.querySelectorAll('.hero [data-count], .dial [data-count]').forEach(el=>{
-  const r = el.getBoundingClientRect();
-  if(r.top < innerHeight) countUp(el);
-}));
-
-const counted = new WeakSet();
-function countUp(el){
-  if(counted.has(el)) return; counted.add(el);
-  const target = +el.dataset.count, suf = el.dataset.suffix || '';
-  if(reduce){ el.textContent = target.toLocaleString('en-US') + suf; return; }
-  const t0 = performance.now(), dur = 1400;
-  (function tick(t){
-    const p = Math.min((t - t0)/dur, 1), e = 1 - Math.pow(1-p, 3);
-    el.textContent = Math.round(target*e).toLocaleString('en-US') + (p===1 ? suf : '');
-    if(p < 1) requestAnimationFrame(tick);
-  })(t0);
-}
 
 /* ================= dialect decoder ================= */
 const PH = [
@@ -1230,6 +1563,30 @@ const secIO = new IntersectionObserver(es=>{
 ['platform','dialect','market','reports','why','faq'].forEach(id=>{
   const el = document.getElementById(id); if(el) secIO.observe(el);
 });
+
+/* ================= contact form (mailto) ================= */
+document.getElementById('cform').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const name = v('cf-name'), brand = v('cf-brand'), msg = v('cf-msg');
+  const subject = 'Ripple demo' + (brand ? ' — ' + brand : '');
+  const body = (msg ? msg + '\n\n' : '') + (name ? '— ' + name : '') + (brand ? (name ? ', ' : '— ') + brand : '');
+  location.href = 'mailto:hello@ripple.kw?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+
+/* ================= legal modals ================= */
+function openLegal(id){
+  document.getElementById('legal-' + id).classList.add('open');
+  document.body.classList.add('lock');
+}
+function closeLegal(){
+  document.querySelectorAll('.legal.open').forEach(m=>m.classList.remove('open'));
+  document.body.classList.remove('lock');
+}
+document.querySelectorAll('.legal').forEach(m=>{
+  m.addEventListener('click', (e)=>{ if(e.target === m) closeLegal(); });
+});
+document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeLegal(); });
 
 /* restore language */
 try{ const s = localStorage.getItem('rpl-lang'); if(s === 'ar') setLang('ar'); }catch(e){}
